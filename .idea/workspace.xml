@@ -77,23 +77,10 @@
       <file leaf-file-name="LoginInteractorImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="224">
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,21 +139,9 @@
       <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="104" column="63" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
+            <state relative-caret-position="-1047">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1964,7 +1939,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/alertdialog/OptAnimationLoader.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/alertdialog/PrgressWheel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/alertdialog/Rotate3dAnimation.java" />
@@ -2010,10 +1984,11 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/commonutils/CommonUtilities.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/MessageBean.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java" />
       </list>
     </option>
@@ -2067,7 +2042,7 @@
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="activi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;LoginI&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;LoginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Regis&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;fra&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/fragment_offers.xml&#10;NavigationD&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Navigat&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_navigation_drawer.xml&#10;string&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Add&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/add_dependant_screen.xml&#10;activity_re&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_register.xml&#10;activityLo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;Login&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;LoginAc&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;loginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;string.xml&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;String&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Common&#9;PSI&#9;JAVA://bhartiairtel.themehackathon.commonutils.CommonUtilities&#10;style&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/styles.xml&#10;ProgressWheel&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/alertdialog/ProgressWheel.java&#10;blue_button_background&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/drawable/blue_button_background.xml&#10;APIClient&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIClient.java&#10;LoginPresenterImpl&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginPresenterImpl.java" />
+    <property name="SearchEverywhereHistoryKey" value="Loginres&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;LoginRes&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;Mess&#9;PSI&#9;JAVA://MessageBean&#10;activi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;LoginI&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;LoginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Regis&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;fra&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/fragment_offers.xml&#10;NavigationD&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Navigat&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_navigation_drawer.xml&#10;string&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Add&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/add_dependant_screen.xml&#10;activity_re&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_register.xml&#10;activityLo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;Login&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;LoginAc&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;loginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;string.xml&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;String&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Common&#9;PSI&#9;JAVA://bhartiairtel.themehackathon.commonutils.CommonUtilities&#10;style&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/styles.xml&#10;ProgressWheel&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/alertdialog/ProgressWheel.java&#10;blue_button_background&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/drawable/blue_button_background.xml&#10;APIClient&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIClient.java&#10;LoginPresenterImpl&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginPresenterImpl.java" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="device.picker.selection" value="T03850BXMY" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPropertiesWindowManager-NlEditorPanel.WIDTH" value="101" />
@@ -2558,14 +2533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_sliding_image.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2964,17 +2931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -3046,18 +3002,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="224">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/MessageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="104" column="63" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
+        <state relative-caret-position="-1047">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

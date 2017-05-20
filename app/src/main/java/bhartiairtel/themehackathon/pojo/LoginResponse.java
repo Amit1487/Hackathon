@@ -28,11 +28,8 @@ public class LoginResponse {
 
     @Override
     public String toString() {
-        return "ResponseDTO [messageBean=" + messageBean + ", result=" + result +"]";
+        return "ResponseDTO [messageBean=" + messageBean + ", result=" + result + "]";
     }
 
 
 }
-
-
-

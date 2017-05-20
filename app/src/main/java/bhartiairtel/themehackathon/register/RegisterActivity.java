@@ -1,4 +1,3 @@
-
 package bhartiairtel.themehackathon.register;
 
 import android.app.Activity;
