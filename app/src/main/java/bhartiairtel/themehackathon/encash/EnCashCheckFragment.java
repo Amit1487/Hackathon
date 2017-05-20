@@ -179,18 +179,18 @@ public class EnCashCheckFragment extends Fragment {
     private void populateUi(final EnCashResult result) {
 
         mLLInfoLayout.setVisibility(View.VISIBLE);
-        mTvFrmMobile.setText(result.getFrommobile());//": "8698015062",
-        mTvPayeeMob.setText(result.getPayeemobile());
+        mTvFrmMobile.setText("Issued By : "+result.getFrommobile());//": "8698015062",
+        mTvPayeeMob.setText("Payee Mobile No : "+result.getPayeemobile());
         ;//": "4333333",
-        mTvPayeeName.setText(result.getPayeename());
+        mTvPayeeName.setText("Payee Name : "+result.getPayeename());
         ;//": "atul",
-        mTvIdProofType.setText(result.getIdprooftype());
+        mTvIdProofType.setText("ID Proof : "+result.getIdprooftype());
         ;//": "adhar",
-        mTvIdProofNum.setText(result.getIdprofnumber());
+        mTvIdProofNum.setText("ID Proof Number : "+result.getIdprofnumber());
         ;//": "ddddd",
-        mTvAmnt.setText(result.getAmount());
+        mTvAmnt.setText("Amount : "+result.getAmount());
         ;//": 10,
-        mTvCheckNo.setText(result.getChequenumber());
+        mTvCheckNo.setText("Cheque Number : "+result.getChequenumber());
         mBtnEnCash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
