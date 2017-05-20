@@ -186,7 +186,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
                 break;
             case R.id.btn_reg_user:
                 startActivity(new Intent(this, RegisterActivity.class));
-//                finish();
+                finish();
                 break;
         }
 

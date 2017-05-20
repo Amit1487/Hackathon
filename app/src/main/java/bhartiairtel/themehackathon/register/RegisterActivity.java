@@ -134,7 +134,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
                              MessageBean msgBean = commonResponse.getMessageBean();
                              if (msgBean.getStatuscode() == 200) {
                                  //display UI
-                                 finish();
+                                 onUseretail((GetUserDetailsResponseBean) commonResponse.getResult());
                              } else {
 
                                  String msg = "Some Issues";
