@@ -6,6 +6,7 @@ import bhartiairtel.themehackathon.echeck.CheResponseque;
 import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.echeck.ECheckResponse;
 import bhartiairtel.themehackathon.encash.EnCashCheckRequest;
+import bhartiairtel.themehackathon.encash.EnCashChequeRequest;
 import bhartiairtel.themehackathon.encash.EncashResponse;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
@@ -45,7 +46,7 @@ public interface APIInterface {
     Call<EncashResponse> requestCheckDetails(@Body EnCashCheckRequest body);
 
     @POST("/smartbank/cashcheque")
-    Call<CommonResponse> requestEncash(@Body EnCashCheckRequest body);
+    Call<CommonResponse> requestEncash(@Body EnCashChequeRequest body);
 
     @POST("/smartbank/getallcheques")
     Call<CheResponseque> getallcheques(@Body LoginRequest body);

@@ -135,9 +135,9 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.en_cash) {
             fragment = EnCashCheckFragment.newInstance("", "");
         }
-
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, fragment).commit();
+        if (null != fragment)
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_frame, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

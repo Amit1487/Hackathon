@@ -108,6 +108,9 @@ public class EnCashCheckFragment extends Fragment {
         mTvCheckNo = (TextView) view.findViewById(R.id.tv_check_no);
 
         mBtnEnCash = (Button) view.findViewById(R.id.btn_encash);
+
+        mLLInfoLayout.setVisibility(View.GONE);
+
         view.findViewById(R.id.btn_submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -220,10 +223,10 @@ public class EnCashCheckFragment extends Fragment {
     }
 
     private void requestEncashAmount(String userName, String checkNo, String mPin) {
-        final EnCashCheckRequest enCashCheckRequest = new EnCashCheckRequest();
+        final EnCashChequeRequest enCashCheckRequest = new EnCashChequeRequest();
         enCashCheckRequest.setUsername(userName);
         enCashCheckRequest.setMpin(mPin);
-        enCashCheckRequest.setChecknumber(checkNo);
+        enCashCheckRequest.setChequenumber(checkNo);
 
 
         Call call = APIClient.getClient().create(APIInterface.class).requestEncash(enCashCheckRequest);
@@ -262,5 +265,13 @@ public class EnCashCheckFragment extends Fragment {
                         .setConfirmClickListener(null).show();
             }
         });
+    }
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (null != mLLInfoLayout)
+            mLLInfoLayout.setVisibility(View.GONE);
     }
 }

@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:orientation="vertical">
 
 
@@ -91,7 +91,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="30sp"
+                    android:textSize="14sp"
                     android:text="Bearer Details" />
 
 
@@ -103,7 +103,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="30dp"
                     android:text="Atul Gangwar" />
 
@@ -114,7 +114,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"
                     android:text="9963011876" />
 
@@ -125,7 +125,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"
                     android:text="Rs 2000.00" />
 
@@ -136,7 +136,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"
                     android:text="Adhaar Card" />
 
@@ -147,7 +147,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"
                     android:text="31856330978890" />
 
@@ -158,7 +158,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"
                     android:text="31856330978890" />
 
