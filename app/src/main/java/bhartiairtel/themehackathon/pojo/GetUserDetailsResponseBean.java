@@ -7,16 +7,17 @@ package bhartiairtel.themehackathon.pojo;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class GetUserDetailsResponseBean implements Parcelable{
+public class GetUserDetailsResponseBean implements Serializable{
     private String mobilenumber;
     private String name;
     private String mailid;
     private String amount;
     private List<String> roles;
 
-    protected GetUserDetailsResponseBean(Parcel in) {
+    /*protected GetUserDetailsResponseBean(Parcel in) {
         mobilenumber = in.readString();
         name = in.readString();
         mailid = in.readString();
@@ -49,7 +50,7 @@ public class GetUserDetailsResponseBean implements Parcelable{
             return new GetUserDetailsResponseBean[size];
         }
     };
-
+*/
     public String getMobilenumber() {
         return mobilenumber;
     }

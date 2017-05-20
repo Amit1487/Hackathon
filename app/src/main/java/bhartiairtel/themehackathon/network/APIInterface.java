@@ -5,6 +5,8 @@ import bhartiairtel.themehackathon.addmoney.AddMoneyRequestBean;
 import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
+import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
+import bhartiairtel.themehackathon.pojo.UserDetailsResponse;
 import bhartiairtel.themehackathon.register.RegisterRequest;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -34,7 +36,7 @@ public interface APIInterface {
     Call<CommonResponse> changePassword(String body);
 
     @POST("/smartbank/getuserdetails")
-    Call<CommonResponse> getUserDetails(@Body LoginRequest body);
+    Call<UserDetailsResponse> getUserDetails(@Body LoginRequest body);
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);
