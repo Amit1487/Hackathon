@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIClient {
 
     private static Retrofit retrofit = null;
-    private static String BASE_URL = "";
+    private static String BASE_URL = "http://59.145.174.232";
 
    public static Retrofit getClient() {
 

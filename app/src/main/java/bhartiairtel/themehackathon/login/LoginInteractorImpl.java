@@ -1,5 +1,7 @@
 package bhartiairtel.themehackathon.login;
 
+import com.google.gson.Gson;
+
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.pojo.LoginResponse;
@@ -11,8 +13,11 @@ public class LoginInteractorImpl implements LoginInteractor {
 
     @Override
     public void login(final String username, final String password, final OnLoginFinishedListener listener) {
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setUsername(username);
+        loginRequest.setPassword(password);
 
-        Call call = APIClient.getClient().create(APIInterface.class).doGetLoginResources();
+        Call call = APIClient.getClient().create(APIInterface.class).loginUser(new Gson().toJson(loginRequest));
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
@@ -22,11 +27,9 @@ public class LoginInteractorImpl implements LoginInteractor {
 
             }
 
-
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
                 call.cancel();
-
 
                 listener.onFailure();
             }

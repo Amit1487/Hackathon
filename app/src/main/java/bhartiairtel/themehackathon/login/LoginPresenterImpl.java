@@ -22,8 +22,8 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
             loginView.setUsernameError(false);
             if (CommonUtilities.validatePassword(password)) {
                 loginView.setPasswordError(false);
-                loginView.navigateToHome();
-//                loginInteractor.login(username, password, this);
+//                loginView.navigateToHome();
+                loginInteractor.login(username, password, this);
             } else {
                 loginView.setPasswordError(true);
             }
@@ -63,7 +63,7 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
     @Override
     public void onFailure() {
         if (loginView != null) {
-            loginView.navigateToHome();
+            loginView.onError();
         }
     }
 }
