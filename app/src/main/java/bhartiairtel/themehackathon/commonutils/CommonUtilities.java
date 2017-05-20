@@ -1,11 +1,20 @@
 package bhartiairtel.themehackathon.commonutils;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.view.View;
+import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import bhartiairtel.themehackathon.R;
 
 public class CommonUtilities {
 
@@ -50,6 +59,54 @@ public class CommonUtilities {
         }
         return isValid;
 
+    }
+
+    public static void createAlert(Context context, String msg, final OnMpinListener listener) {
+        {
+
+
+            final Dialog mDialog = new Dialog(context, android.R.style.Theme_Dialog);
+            mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            mDialog.setTitle(null);
+            mDialog.getWindow().getAttributes().windowAnimations = R.style.grow_anim;
+            mDialog.setContentView(R.layout.dialog_mpin);
+            ((TextView) mDialog.findViewById(R.id.msg)).setText(msg);
+            final EditText mEtPin = (EditText) mDialog.findViewById(R.id.et_pin);
+            mDialog.findViewById(R.id.postive).setOnClickListener(
+                    new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+
+                            if (mEtPin.getText().toString().length() > 3) {
+                                mDialog.dismiss();
+                                listener.onEntered(mEtPin.getText().toString());
+//                                return mEtPin.getText().toString();
+                            } else {
+                                mEtPin.setError("in valid mpin");
+                            }
+
+
+                        }
+                    });
+            mDialog.getWindow().setBackgroundDrawable(
+                    new ColorDrawable(android.graphics.Color.TRANSPARENT));
+            mDialog.show();
+        /*return mDialog;*/
+
+
+        }
+    }
+
+
+    public interface OnMpinListener {
+        public void onEntered(String mPin);
+    }
+
+    OnMpinListener listener;
+
+    public void setOnMPinListener(OnMpinListener listener) {
+        this.listener = listener;
     }
 
 }

@@ -11,9 +11,19 @@ import android.widget.Spinner;
 
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
+import bhartiairtel.themehackathon.login.LoginActivity;
 import bhartiairtel.themehackathon.login.LoginPresenter;
+import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.main.MainActivity;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
+import bhartiairtel.themehackathon.network.APIClient;
+import bhartiairtel.themehackathon.network.APIInterface;
+import bhartiairtel.themehackathon.pojo.CommonResponse;
+import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
+import bhartiairtel.themehackathon.pojo.MessageBean;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RegisterActivity extends Activity implements RegisterView, View.OnClickListener {
 
@@ -101,10 +111,70 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
     }
 
     @Override
-    public void navigateToHome() {
+    public void onSuccess() {
+        requestUsersDetail();
+//        startActivity(new Intent(this, NavigationDrawerActivity.class));
+//        finish();
+    }
+
+    private void requestUsersDetail() {
+
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setUsername(mTilUsernameWrapper.getEditText().getText().toString());
+
+        Call call = APIClient.getClient().create(APIInterface.class).loginUser(loginRequest);
+        call.enqueue(new Callback<CommonResponse>() {
+
+                         @Override
+                         public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+
+                             CommonResponse commonResponse = response.body();
+
+                             MessageBean msgBean = commonResponse.getMessageBean();
+                             if (msgBean.getStatuscode() == 200) {
+                                 //display UI
+                                 onUseretail((GetUserDetailsResponseBean) commonResponse.getResult());
+                             } else {
+
+                                 String msg = "Some Issues";
+                                 try {
+                                     msg = (String) msgBean.getMessage();
+                                 } catch (ClassCastException e) {
+
+                                 } catch (Exception e) {
+
+                                 }
+
+                                 new AlertDialog(RegisterActivity.this, AlertDialog.ERROR_TYPE)
+                                         .setTitleText("Oops...")
+                                         .setContentText(msg)
+                                         .show();
+                             }
+                         }
+
+                         @Override
+                         public void onFailure(Call<CommonResponse> call, Throwable t) {
+                             call.cancel();
+                             new AlertDialog(RegisterActivity.this, AlertDialog.ERROR_TYPE)
+                                     .setTitleText("Oops...")
+                                     .setContentText("Something went wrong.")
+                                     .show();
+                         }
+
+                     }
+
+        );
+    }
+
+    private void onUseretail(GetUserDetailsResponseBean result) {
+        Intent in = new Intent();
+        in.putExtra("result", result);
+//        in.putExtra("user_name", mTilUsernameWrapper.getEditText().getText().toString());
+//        in.putExtra("mpin", mTilPasswordWrapper.getEditText().getText().toString());
         startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }
+
 
     @Override
     public void onClick(View v) {

@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.alertdialog.AlertDialog;
+import bhartiairtel.themehackathon.commonutils.CommonUtilities;
 import bhartiairtel.themehackathon.login.LoginPresenterImpl;
 
 /**
@@ -25,7 +27,7 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
 
     // TODO: Rename and change types of parameters
     private String mUserName;
-    private String mPin;
+//    private String mPin;
 
     TextInputLayout mTilAmount, mTilBankName, mTilAccNumber;
     private AddMoneyPresenterImpl mPresenter;
@@ -57,7 +59,7 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mUserName = getArguments().getString(ARG_USR_NAME);
-            mPin = getArguments().getString(ARG_MPIN);
+//            mPin = getArguments().getString(ARG_MPIN);
         }
     }
 
@@ -78,7 +80,14 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
         view.findViewById(R.id.btn_submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mPresenter.validateInput(mUserName, mPin, mTilAmount.getEditText().getText().toString(), mTilAccNumber.getEditText().getText().toString(), mTilBankName.getEditText().getText().toString());
+
+                CommonUtilities.createAlert(getActivity(), "Please Enter mPIN", new CommonUtilities.OnMpinListener() {
+                    @Override
+                    public void onEntered(String mPin) {
+                        mPresenter.validateInput(mUserName, mPin, mTilAmount.getEditText().getText().toString(), mTilAccNumber.getEditText().getText().toString(), mTilBankName.getEditText().getText().toString());
+                    }
+                });
+
             }
         });
 

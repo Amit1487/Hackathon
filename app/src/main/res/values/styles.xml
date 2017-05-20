@@ -36,4 +36,9 @@
         <item name="android:paddingRight">21dp</item>
         <item name="android:textColor">@color/button_text_color</item>
     </style>
+
+    <style name="grow_anim">
+        <item name="@android:windowEnterAnimation">@anim/grow_in</item>
+        <item name="@android:windowExitAnimation">@anim/grow_out</item>
+    </style>
 </resources>

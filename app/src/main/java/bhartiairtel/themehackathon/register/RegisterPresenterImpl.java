@@ -60,7 +60,7 @@ public class RegisterPresenterImpl implements RegisterPresenter, RegisterInterac
     @Override
     public void onSuccess() {
         if (registerView != null) {
-            registerView.navigateToHome();
+            registerView.onSuccess();
         }
     }
 

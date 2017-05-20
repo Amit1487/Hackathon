@@ -143,8 +143,6 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     private void onUseretail(GetUserDetailsResponseBean result) {
         Intent in = new Intent();
         in.putExtra("result", result);
-//        in.putExtra("user_name", mTilUsernameWrapper.getEditText().getText().toString());
-        in.putExtra("mpin", mTilPasswordWrapper.getEditText().getText().toString());
         startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }

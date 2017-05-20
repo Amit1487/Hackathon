@@ -14,7 +14,7 @@ public interface RegisterView {
 
     void setPasswordError(boolean error);
 
-    void navigateToHome();
+    void onSuccess();
 
     void onError();
 }
