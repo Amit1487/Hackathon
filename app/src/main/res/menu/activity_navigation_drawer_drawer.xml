@@ -3,21 +3,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/add_money"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Add Money" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/transactions"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Transactions" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/better_together"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Better Together" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/create_cheque"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Create Cheque" />
+
+        <item
+            android:id="@+id/dependent_accounts"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dependent Acounts" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Logout" />
     </group>
 
     <item android:title="Communicate">
