@@ -11,6 +11,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
 
+
     <string name="dialog_default_title">Here\'s a message!</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
@@ -19,5 +20,17 @@
 
     <string name="hint_usr_name">Phone Number</string>
     <string name="hint_pass">Password</string>
+
+
+    <string-array name="array_doc">
+        <item>Adhaar Card</item>
+        <item>Driving License</item>
+        <item>PAN Card</item>
+    </string-array>
+
+    <string-array name="array_user">
+        <item>Customer</item>
+        <item>Vendor</item>
+    </string-array>
 
 </resources>
