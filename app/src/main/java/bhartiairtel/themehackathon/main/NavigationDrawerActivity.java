@@ -45,6 +45,10 @@ public class NavigationDrawerActivity extends AppCompatActivity
     String userName, mPin;
     GetUserDetailsResponseBean result;
 
+    public GetUserDetailsResponseBean getResult() {
+        return result;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2,6 +2,7 @@ package bhartiairtel.themehackathon.network;
 
 
 import bhartiairtel.themehackathon.addmoney.AddMoneyRequestBean;
+import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.register.RegisterRequest;
@@ -11,6 +12,11 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 public interface APIInterface {
+
+
+
+    @POST("smartbank/createcheque")
+    Call<CommonResponse> createCheck(@Body CreateChequeRequestBean body);
 
     @POST("/smartbank/addmoney")
     Call<CommonResponse> addMoney(@Body AddMoneyRequestBean body);
