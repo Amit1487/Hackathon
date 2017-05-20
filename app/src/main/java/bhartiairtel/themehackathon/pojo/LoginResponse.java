@@ -1,11 +1,33 @@
 package bhartiairtel.themehackathon.pojo;
 
 /**
- * Created by B0089798 on 20 / May / 2017 , 1:08 PM.
- * bhartiairtel.themehackathon.pojo
- * Hackathon
+ * Created by B0089737 on 5/20/2017.
  */
 
 public class LoginResponse {
 
+    private MessageBean messageBean;
+    private Object result;
+
+    public void setMessageBean(MessageBean messageBean) {
+        this.messageBean = messageBean;
+    }
+
+    public Object getResult() {
+        return result;
+    }
+
+    public void setResult(Object result) {
+        this.result = result;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseDTO [messageBean=" + messageBean + ", result=" + result +"]";
+    }
+
+
 }
+
+
+
