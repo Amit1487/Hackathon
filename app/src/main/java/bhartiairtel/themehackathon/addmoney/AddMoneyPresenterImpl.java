@@ -48,7 +48,7 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
     }
 
     @Override
-    public void onSuccess(Object result) {
+    public void onSuccess(String result) {
         if (addMoneyView != null) {
             addMoneyView.onSuccess(result);
         }

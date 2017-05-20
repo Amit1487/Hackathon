@@ -129,12 +129,20 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
     }
 
     @Override
-    public void onSuccess(Object result) {
-
+    public void onSuccess(String result) {
+        new AlertDialog(this.getContext(), AlertDialog.SUCCESS_TYPE).
+                setTitleText("Congratulations!")
+                .setContentText(result)
+                .setConfirmText("OK")
+                .setConfirmClickListener(null).show();
     }
 
     @Override
     public void onError(String err) {
-
+        new AlertDialog(this.getContext(), AlertDialog.ERROR_TYPE).
+                setTitleText("Oops!")
+                .setContentText(err)
+                .setConfirmText("OK")
+                .setConfirmClickListener(null).show();
     }
 }

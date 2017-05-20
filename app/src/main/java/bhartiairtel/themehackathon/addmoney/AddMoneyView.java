@@ -18,7 +18,7 @@ public interface AddMoneyView {
 
     void setBankError(boolean isError);
 
-    void onSuccess(Object result);
+    void onSuccess(String result);
 
     void onError(String err);
 }

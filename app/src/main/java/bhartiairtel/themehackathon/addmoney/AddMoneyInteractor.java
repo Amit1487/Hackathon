@@ -5,7 +5,7 @@ public interface AddMoneyInteractor {
 
     interface OnAddMoneyFinishedListener {
 
-        void onSuccess(Object result);
+        void onSuccess(String result);
 
         void onFailure(String errorMsg);
     }
