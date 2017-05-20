@@ -9,8 +9,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import bhartiairtel.themehackathon.R;
-import bhartiairtel.themehackathon.main.MainActivity;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
+import bhartiairtel.themehackathon.network.APIInterface;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
 
@@ -27,6 +27,10 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         findViewById(R.id.button).setOnClickListener(this);
+
+
+//        apiInterface = APIClient.getClient().create(APIInterface.class);
+
 
         presenter = new LoginPresenterImpl(this);
     }
