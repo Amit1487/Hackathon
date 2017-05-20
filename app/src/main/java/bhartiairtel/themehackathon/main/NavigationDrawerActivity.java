@@ -141,20 +141,13 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
                                  }
 
-                                 new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
-                                         .setTitleText("Oops...")
-                                         .setContentText(msg)
-                                         .show();
                              }
                          }
 
                          @Override
                          public void onFailure(Call<UserDetailsResponse> call, Throwable t) {
                              call.cancel();
-                             new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
-                                     .setTitleText("Oops...")
-                                     .setContentText("Something went wrong.")
-                                     .show();
+                            
                          }
 
                      }

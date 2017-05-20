@@ -2,6 +2,7 @@ package bhartiairtel.themehackathon.network;
 
 
 import bhartiairtel.themehackathon.addmoney.AddMoneyRequestBean;
+import bhartiairtel.themehackathon.dependents.AddDependentsRequest;
 import bhartiairtel.themehackathon.echeck.CheResponseque;
 import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.echeck.ECheckResponse;
@@ -50,6 +51,12 @@ public interface APIInterface {
 
     @POST("/smartbank/getallcheques")
     Call<CheResponseque> getallcheques(@Body LoginRequest body);
+
+    @POST("/smartbank/adddependent")
+    Call<CommonResponse> addDependents(@Body AddDependentsRequest body);
+
+
+
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);
