@@ -2,6 +2,7 @@ package bhartiairtel.themehackathon.network;
 
 
 import bhartiairtel.themehackathon.addmoney.AddMoneyRequestBean;
+import bhartiairtel.themehackathon.echeck.CheResponseque;
 import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.echeck.ECheckResponse;
 import bhartiairtel.themehackathon.encash.EnCashCheckRequest;
@@ -17,7 +18,6 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 public interface APIInterface {
-
 
 
     @POST("smartbank/createcheque")
@@ -41,10 +41,14 @@ public interface APIInterface {
     @POST("/smartbank/getuserdetails")
     Call<UserDetailsResponse> getUserDetails(@Body LoginRequest body);
 
-    @POST("smartbank/getchequedetails")
+    @POST("/smartbank/getchequedetails")
     Call<EncashResponse> requestCheckDetails(@Body EnCashCheckRequest body);
 
+    @POST("/smartbank/cashcheque")
     Call<CommonResponse> requestEncash(@Body EnCashCheckRequest enCashCheckRequest);
+
+    @POST("/smartbank/getallcheques")
+    Call<CheResponseque> getallcheques(@Body EnCashCheckRequest enCashCheckRequest);
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);
