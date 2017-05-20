@@ -122,7 +122,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername(mTilUsernameWrapper.getEditText().getText().toString());
 
-        Call call = APIClient.getClient().create(APIInterface.class).loginUser(loginRequest);
+        Call call = APIClient.getClient().create(APIInterface.class).getUserDetails(loginRequest);
         call.enqueue(new Callback<CommonResponse>() {
 
                          @Override

@@ -28,7 +28,7 @@ public interface APIInterface {
     Call<CommonResponse> changePassword(String body);
 
     @POST("/smartbank/getuserdetails")
-    Call<CommonResponse> getUserDetails(String body);
+    Call<CommonResponse> getUserDetails(@Body LoginRequest body);
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);

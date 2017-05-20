@@ -1,15 +1,9 @@
 package bhartiairtel.themehackathon.register;
 
-import android.os.Handler;
-import android.text.TextUtils;
-
-import com.google.gson.Gson;
-
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
-import bhartiairtel.themehackathon.pojo.LoginResponse;
 import bhartiairtel.themehackathon.pojo.MessageBean;
 import retrofit2.Call;
 import retrofit2.Callback;
