@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -30,6 +31,7 @@ import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
 import bhartiairtel.themehackathon.echeck.ChequeListFragment;
 import bhartiairtel.themehackathon.echeck.ECheckFragment;
 import bhartiairtel.themehackathon.encash.EnCashCheckFragment;
+import bhartiairtel.themehackathon.login.LoginActivity;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
@@ -37,6 +39,7 @@ import bhartiairtel.themehackathon.offer.AdsFragment;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
 import bhartiairtel.themehackathon.pojo.MessageBean;
+import bhartiairtel.themehackathon.pojo.UserDetailsResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -47,6 +50,10 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
     String userName, mPin;
     GetUserDetailsResponseBean result;
+    TextView mBalance, mUserName, email;
+    Runnable Update;
+    Timer swipeTimer = new Timer();
+    final Handler handler = new Handler();
 
     public GetUserDetailsResponseBean getResult() {
         return result;
@@ -60,6 +67,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         userName = result.getMobilenumber();//getIntent().getStringExtra("user_name");
         mPin = getIntent().getStringExtra("mpin");
 
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -72,9 +80,86 @@ public class NavigationDrawerActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        mBalance = (TextView) navigationView.getHeaderView(0).findViewById(R.id.textView_bal);
+        mBalance.setText("Curr Bal : " + result.getAmount());
+
+        email = (TextView) navigationView.getHeaderView(0).findViewById(R.id.textView);
+        email.setText(result.getMailid());
+
+
+        mUserName = (TextView) navigationView.getHeaderView(0).findViewById(R.id.user_name);
+        mUserName.setText(result.getMobilenumber());
+
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, AdsFragment.newInstance("", "")).commit();
 
+
+        Update = new Runnable() {
+            public void run() {
+                requestUsersDetail();
+            }
+        };
+
+        swipeTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, 7000, 7000);
+
+
+    }
+
+
+    private void requestUsersDetail() {
+
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setUsername(result.getMobilenumber());
+
+        Call call = APIClient.getClient().create(APIInterface.class).getUserDetails(loginRequest);
+        call.enqueue(new Callback<UserDetailsResponse>() {
+
+                         @Override
+                         public void onResponse(Call<UserDetailsResponse> call, Response<UserDetailsResponse> response) {
+
+                             UserDetailsResponse commonResponse = response.body();
+
+                             MessageBean msgBean = commonResponse.getMessageBean();
+                             if (msgBean.getStatuscode() == 200) {
+                                 //display UI
+//                                 onUseretail((GetUserDetailsResponseBean) commonResponse.getResult());
+                                 mBalance.setText("Curr Bal : " + commonResponse.getResult().getAmount());
+                             } else {
+
+                                 String msg = "Some Issues";
+                                 try {
+                                     msg = (String) msgBean.getMessage();
+                                 } catch (ClassCastException e) {
+
+                                 } catch (Exception e) {
+
+                                 }
+
+                                 new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
+                                         .setTitleText("Oops...")
+                                         .setContentText(msg)
+                                         .show();
+                             }
+                         }
+
+                         @Override
+                         public void onFailure(Call<UserDetailsResponse> call, Throwable t) {
+                             call.cancel();
+                             new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
+                                     .setTitleText("Oops...")
+                                     .setContentText("Something went wrong.")
+                                     .show();
+                         }
+
+                     }
+
+        );
     }
 
     private void displayUi(GetUserDetailsResponseBean result) {
