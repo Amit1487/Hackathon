@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.login.LoginPresenter;
 import bhartiairtel.themehackathon.main.MainActivity;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
@@ -112,6 +113,9 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void onError() {
-
+        new AlertDialog(this, AlertDialog.ERROR_TYPE)
+                .setTitleText("Oops...")
+                .setContentText("Something went wrong!")
+                .show();
     }
 }

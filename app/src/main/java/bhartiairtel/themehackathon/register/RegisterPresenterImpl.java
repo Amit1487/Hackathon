@@ -19,7 +19,7 @@ public class RegisterPresenterImpl implements RegisterPresenter, RegisterInterac
             registerView.showProgress();
         }
 
-        if (username.length()>4){
+        if (username.length()>3){
             registerView.setUsernameError(false);
             if(CommonUtilities.isValidPhoneNumber(mobileNun)){
                 registerView.setMobileNumberError(false);

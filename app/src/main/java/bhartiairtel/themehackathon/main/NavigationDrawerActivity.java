@@ -21,17 +21,32 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
+import bhartiairtel.themehackathon.login.LoginRequest;
+import bhartiairtel.themehackathon.network.APIClient;
+import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.offer.AdsFragment;
+import bhartiairtel.themehackathon.pojo.CommonResponse;
+import bhartiairtel.themehackathon.pojo.MessageBean;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class NavigationDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AdsFragment.OnFragmentInteractionListener {
+
+
+    String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
+
+        userName = getIntent().getStringExtra("user_name");
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -44,11 +59,58 @@ public class NavigationDrawerActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-//        init();
-
-
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, AdsFragment.newInstance("", "")).commit();
+
+        requestUsersDetail();
+    }
+
+    private void requestUsersDetail() {
+
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setUsername(userName);
+
+        Call call = APIClient.getClient().create(APIInterface.class).loginUser(loginRequest);
+        call.enqueue(new Callback<CommonResponse>() {
+
+                         @Override
+                         public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+
+                             CommonResponse commonResponse = response.body();
+
+                             MessageBean msgBean = commonResponse.getMessageBean();
+                             if (msgBean.getStatuscode() == 200) {
+                                 //display UI
+                             } else {
+
+                                 String msg = "Some Issues";
+                                 try {
+                                     msg = (String) msgBean.getMessage();
+                                 } catch (ClassCastException e) {
+
+                                 } catch (Exception e) {
+
+                                 }
+
+                                 new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
+                                         .setTitleText("Oops...")
+                                         .setContentText(msg)
+                                         .show();
+                             }
+                         }
+
+                         @Override
+                         public void onFailure(Call<CommonResponse> call, Throwable t) {
+                             call.cancel();
+                             new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
+                                     .setTitleText("Oops...")
+                                     .setContentText("Something went wrong.")
+                                     .show();
+                         }
+
+                     }
+
+        );
     }
 
 
@@ -86,7 +148,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-     public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 

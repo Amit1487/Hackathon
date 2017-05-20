@@ -38,32 +38,16 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
     }
 
     @Override
-    public void onUsernameError() {
+    public void onSuccess(Object result) {
         if (loginView != null) {
-            loginView.setUsernameError(true);
-            loginView.hideProgress();
+            loginView.navigateToHome(result);
         }
     }
 
     @Override
-    public void onPasswordError() {
+    public void onFailure(String errMsg) {
         if (loginView != null) {
-            loginView.setPasswordError(true);
-            loginView.hideProgress();
-        }
-    }
-
-    @Override
-    public void onSuccess() {
-        if (loginView != null) {
-            loginView.navigateToHome();
-        }
-    }
-
-    @Override
-    public void onFailure() {
-        if (loginView != null) {
-            loginView.onError();
+            loginView.onError(errMsg);
         }
     }
 }

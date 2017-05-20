@@ -10,7 +10,7 @@ public interface LoginView {
 
     void setPasswordError(boolean isError);
 
-    void navigateToHome();
+    void navigateToHome(Object result);
 
-    void onError();
+    void onError(String errMsg);
 }

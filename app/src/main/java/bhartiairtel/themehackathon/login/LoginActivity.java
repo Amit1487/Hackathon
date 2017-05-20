@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CommonUtilities;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 import bhartiairtel.themehackathon.register.RegisterActivity;
@@ -77,14 +78,20 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     }
 
     @Override
-    public void navigateToHome() {
+    public void navigateToHome(Object result) {
+
+        Intent in = new Intent();
+        in.putExtra("user_name", mTilUsernameWrapper.getEditText().getText().toString());
         startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }
 
     @Override
-    public void onError() {
-
+    public void onError(String errMsg) {
+        new AlertDialog(this, AlertDialog.ERROR_TYPE)
+                .setTitleText("Oops...")
+                .setContentText(errMsg)
+                .show();
     }
 
     @Override
