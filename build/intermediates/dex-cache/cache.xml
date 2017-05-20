@@ -3,21 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_0b3279176c0e8a3a362895ad4cef0000015f34a9.jar" />
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_5287b41680fee451b3094448d7090c27245c0b1f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_08614cb0a15d772a2d7852385126962d68bf2587.jar" />
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_16289245a187c4e843246a77efe38fff632b5704.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_c8f0206877e4e15a9acbf8f540c3bf72dba1f6e2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -27,6 +36,15 @@
         revision="25.0.1"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
         <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_388f484502a74d601141c3d9513961553a11b243.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_f396c989b0efc180decbbf2af551b784d3e11a95.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,21 +66,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8f29857e67b92cda4a80f9d8b282e9a5a715c839.jar" />
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_9574a0b8309f94a594379c274f2a175403f08a6b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9e884b0b1a2f13760fb042fa9f6ec8ca5366ff59.jar" />
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_d04a670938d847cf011aa7cb892b53cadbda6158.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_9444ba5937138de19c6c14600cca37254a5c39d6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,30 +120,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_7cd80b96e0b810a0d8071cbef7bf87f7e0045ec0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9f0d6702db8d546fa40f1bb733318355d32e6416.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_d7ed0beecfa27900ab267f1fcde786e1be503b1e.jar" />
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_1ab43ed0e4d9a2a4d45fe6f8c6736dd6cec51c5c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -135,6 +144,150 @@
         revision="25.0.1"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
         <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_2163c584e5f78ec078dc8d3c8b4f0dd10820aa1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_e94020c235f4f4bfec0b7df4ab94d97e5b8cfb8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_0b3279176c0e8a3a362895ad4cef0000015f34a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_08614cb0a15d772a2d7852385126962d68bf2587.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_ba316109c80f62920231b92449cad149c69a9496.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_b36b246c0032c41e4841cc766b1be996bd60e215.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_65725f80c3affb81ba634d52ba738f4b19da388d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8f29857e67b92cda4a80f9d8b282e9a5a715c839.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9e884b0b1a2f13760fb042fa9f6ec8ca5366ff59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8716e8cae6b5b628b3767f3ee5fab28f8385c185.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_7cd80b96e0b810a0d8071cbef7bf87f7e0045ec0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9f0d6702db8d546fa40f1bb733318355d32e6416.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_06e1292e70eee6d94e1952626c422b4836f64067.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_41e57ab75a5f7d3ffe802876c35fb6202dba8975.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/B0089798/Desktop/untitled folder 3/ThemeHackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_d7ed0beecfa27900ab267f1fcde786e1be503b1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_4e4cd36282c38ff72b084b6ada2e729b004520a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_bc52c3717488d8ebc46f34419fc7f6c41aac8c89.jar" />
     </item>
 
 </items>

@@ -9,8 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="bhartiairtel.themehackathon.login.LoginActivity"
-            android:label="@string/app_name" >
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,9 +18,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="bhartiairtel.themehackathon.main.MainActivity"
-            android:label="@string/title_activity_main" >
-        </activity>
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".main.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

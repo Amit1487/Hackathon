@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.main.MainActivity;
+import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
 
@@ -52,7 +53,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     }
 
     @Override public void navigateToHome() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }
 
