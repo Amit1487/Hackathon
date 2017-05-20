@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         card_view:cardCornerRadius="4dp">
 
-        <Line
+
 
         <TextView
             android:text="Hello Card"
