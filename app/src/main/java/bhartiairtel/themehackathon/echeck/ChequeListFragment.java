@@ -100,7 +100,7 @@ public class ChequeListFragment extends Fragment {
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername(((NavigationDrawerActivity) getActivity()).getResult().getMobilenumber());
 
-        Call call = APIClient.getClient().create(APIInterface.class).getUserDetails(loginRequest);
+        Call call = APIClient.getClient().create(APIInterface.class).getallcheques(loginRequest);
         call.enqueue(new Callback<CheResponseque>() {
 
                          @Override

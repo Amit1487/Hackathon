@@ -27,6 +27,7 @@ import bhartiairtel.themehackathon.addmoney.AddMoneyFragment;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
+import bhartiairtel.themehackathon.echeck.ChequeListFragment;
 import bhartiairtel.themehackathon.echeck.ECheckFragment;
 import bhartiairtel.themehackathon.encash.EnCashCheckFragment;
 import bhartiairtel.themehackathon.login.LoginRequest;
@@ -124,7 +125,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         if (id == R.id.add_money) {
             fragment = AddMoneyFragment.newInstance(userName, mPin);
         } else if (id == R.id.transactions) {
-
+            fragment = ChequeListFragment.newInstance("", "");
         } else if (id == R.id.better_together) {
 
         } else if (id == R.id.create_cheque) {

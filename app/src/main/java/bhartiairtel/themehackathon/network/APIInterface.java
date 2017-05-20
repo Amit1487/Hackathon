@@ -45,10 +45,10 @@ public interface APIInterface {
     Call<EncashResponse> requestCheckDetails(@Body EnCashCheckRequest body);
 
     @POST("/smartbank/cashcheque")
-    Call<CommonResponse> requestEncash(@Body EnCashCheckRequest enCashCheckRequest);
+    Call<CommonResponse> requestEncash(@Body EnCashCheckRequest body);
 
     @POST("/smartbank/getallcheques")
-    Call<CheResponseque> getallcheques(@Body EnCashCheckRequest enCashCheckRequest);
+    Call<CheResponseque> getallcheques(@Body LoginRequest body);
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);
