@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +23,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.addmoney.AddMoneyFragment;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
@@ -29,6 +32,7 @@ import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.offer.AdsFragment;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
+import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
 import bhartiairtel.themehackathon.pojo.MessageBean;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -38,7 +42,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AdsFragment.OnFragmentInteractionListener {
 
 
-    String userName;
+    String userName, mPin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         setContentView(R.layout.activity_navigation_drawer);
 
         userName = getIntent().getStringExtra("user_name");
+        mPin = getIntent().getStringExtra("mpin");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -81,6 +86,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                              MessageBean msgBean = commonResponse.getMessageBean();
                              if (msgBean.getStatuscode() == 200) {
                                  //display UI
+                                 displayUi((GetUserDetailsResponseBean) commonResponse.getResult());
                              } else {
 
                                  String msg = "Some Issues";
@@ -111,6 +117,10 @@ public class NavigationDrawerActivity extends AppCompatActivity
                      }
 
         );
+    }
+
+    private void displayUi(GetUserDetailsResponseBean result) {
+        Log.d("TAG ", " GetUserDetailsResponseBean " + result.toString());
     }
 
 
@@ -150,10 +160,12 @@ public class NavigationDrawerActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Fragment fragment = null;
+
         int id = item.getItemId();
 
         if (id == R.id.add_money) {
-            // Handle the camera action
+            fragment = AddMoneyFragment.newInstance(userName, mPin);
         } else if (id == R.id.transactions) {
 
         } else if (id == R.id.better_together) {
@@ -165,6 +177,9 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.logout) {
 
         }
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, fragment).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

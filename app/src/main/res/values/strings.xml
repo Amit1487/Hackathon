@@ -41,5 +41,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invalid_amnt">Enter valid amount</string>
+    <string name="invalid_acc">Enter valid account number</string>
+    <string name="invalid_bank">Invalid bank name</string>
 
 </resources>

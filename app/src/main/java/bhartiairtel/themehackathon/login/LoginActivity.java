@@ -82,6 +82,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
 
         Intent in = new Intent();
         in.putExtra("user_name", mTilUsernameWrapper.getEditText().getText().toString());
+        in.putExtra("mpin", mTilPasswordWrapper.getEditText().getText().toString());
         startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }
