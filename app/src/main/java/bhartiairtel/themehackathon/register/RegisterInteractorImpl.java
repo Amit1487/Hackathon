@@ -25,7 +25,7 @@ public class RegisterInteractorImpl implements RegisterInteractor {
         registerRequest.setPassword(password);
         registerRequest.setCnfPassword(cnfPassword);
 
-        Call call = APIClient.getClient().create(APIInterface.class).createUser(new Gson().toJson(registerRequest));
+        Call call = APIClient.getClient().create(APIInterface.class).createUser(registerRequest);
         call.enqueue(new Callback<CreateUserResponse>() {
             @Override
             public void onResponse(Call<CreateUserResponse> call, Response<CreateUserResponse> response) {

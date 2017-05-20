@@ -12,6 +12,96 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_9444ba5937138de19c6c14600cca37254a5c39d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_a903ef6db483fac3625706042b03e5a676a59f22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_1ab43ed0e4d9a2a4d45fe6f8c6736dd6cec51c5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.pnikosis-materialish-progress-1.0_de7eeb38d30cdeac5a1e6ba49807b89668cf25d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_ba316109c80f62920231b92449cad149c69a9496.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_3b07d07f13611e7cd4b30f4dab0fc1a5c2d0f805.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_b36b246c0032c41e4841cc766b1be996bd60e215.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_9fd086f3cbf847999bc812cc6c8b99688043df6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_06e1292e70eee6d94e1952626c422b4836f64067.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_41e57ab75a5f7d3ffe802876c35fb6202dba8975.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -39,15 +129,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_425e6eb436d9682d2375cb7b243dbe4b4d7ac93b.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -66,39 +147,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_9444ba5937138de19c6c14600cca37254a5c39d6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_a903ef6db483fac3625706042b03e5a676a59f22.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/B0089798/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
         <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_2d09f77b24016c4038fe499f85a77db60cfacdbf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_1ab43ed0e4d9a2a4d45fe6f8c6736dd6cec51c5c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,15 +174,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.pnikosis-materialish-progress-1.0_de7eeb38d30cdeac5a1e6ba49807b89668cf25d9.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -138,39 +183,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_ba316109c80f62920231b92449cad149c69a9496.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
         <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/gson-2.7_8da3c2d313f0df2cdcbd0da9d7be4c53830355f2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_3b07d07f13611e7cd4b30f4dab0fc1a5c2d0f805.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_b36b246c0032c41e4841cc766b1be996bd60e215.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,39 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/B0089798/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_9fd086f3cbf847999bc812cc6c8b99688043df6f.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
         <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8716e8cae6b5b628b3767f3ee5fab28f8385c185.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_06e1292e70eee6d94e1952626c422b4836f64067.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/B0089798/Desktop/Hackathon/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_41e57ab75a5f7d3ffe802876c35fb6202dba8975.jar" />
     </item>
     <item
         is-multidex="false"

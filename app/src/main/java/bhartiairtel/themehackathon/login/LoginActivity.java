@@ -31,7 +31,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
 //        progressBar = (ProgressBar) findViewById(R.id.progress);
 
         mTilUsernameWrapper = (TextInputLayout) findViewById(R.id.til_mob__wrapper);
-        mTilUsernameWrapper.setHint(getString(R.string.hint_usr_name));
+        mTilUsernameWrapper.setHint(getString(R.string.hint_mob_num));
         mTilPasswordWrapper = (TextInputLayout) findViewById(R.id.til_mpin_wrapper);
         mTilPasswordWrapper.setHint(getString(R.string.hint_pass));
 

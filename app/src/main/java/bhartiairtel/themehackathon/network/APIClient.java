@@ -11,7 +11,7 @@ public class APIClient {
     private static Retrofit retrofit = null;
     private static String BASE_URL = "http://59.145.174.232";
 
-   public static Retrofit getClient() {
+    public static Retrofit getClient() {
 
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -27,17 +27,6 @@ public class APIClient {
 
         return retrofit;
     }
-
-
-   /* public static Retrofit getClient() {
-        if (retrofit==null) {
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
-        return retrofit;
-    }*/
 
 }
 

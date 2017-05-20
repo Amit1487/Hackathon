@@ -18,7 +18,7 @@
     <string name="LOADING">Loading...</string>
     <string name="default_progressbar">Default Progressbar:</string>
 
-    <string name="hint_usr_name">Phone Number</string>
+    <string name="hint_usr_name">User name</string>
     <string name="hint_pass">Password</string>
     <string name="hint_mob_num">Mobile Number</string>
     <string name="hint_email">Email id</string>

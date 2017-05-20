@@ -4,6 +4,7 @@ package bhartiairtel.themehackathon.network;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.LoginResponse;
 import bhartiairtel.themehackathon.pojo.RegisterResponse;
+import bhartiairtel.themehackathon.register.RegisterRequest;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -18,7 +19,7 @@ public interface APIInterface {
     Call<LoginResponse> loginUser(@Body LoginRequest body);
 
     @POST("/smartbank/register")
-    Call<RegisterResponse> createUser(@Body String body);
+    Call<RegisterResponse> createUser(@Body RegisterRequest body);
 
     @POST("/smartbank/logmeout")
     Call<LoginResponse> logMeOut(@Header("username") String username, @Header("Authorization") String token, String body);

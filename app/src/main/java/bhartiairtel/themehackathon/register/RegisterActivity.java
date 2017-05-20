@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.login.LoginPresenter;
 import bhartiairtel.themehackathon.main.MainActivity;
+import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 
 public class RegisterActivity extends Activity implements RegisterView, View.OnClickListener {
 
@@ -101,7 +102,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void navigateToHome() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, NavigationDrawerActivity.class));
         finish();
     }
 

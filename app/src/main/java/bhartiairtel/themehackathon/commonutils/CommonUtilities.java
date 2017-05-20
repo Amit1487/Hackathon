@@ -32,7 +32,7 @@ public class CommonUtilities {
     }
 
     public static boolean validatePassword(String password) {
-        return password.length() > 5;
+        return password.length() > 3;
     }
 
     static String REGEX_PHONE_NUMBER = "^[7-9][0-9]{9}$";

@@ -4,7 +4,6 @@
     package="bhartiairtel.themehackathon">
 
     <application
-        android:name="bhartiairtel.themehackathon.main.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/old_ic_launcher"
         android:label="@string/app_name"
