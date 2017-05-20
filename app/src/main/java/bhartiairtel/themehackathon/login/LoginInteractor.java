@@ -9,6 +9,8 @@ public interface LoginInteractor {
         void onPasswordError();
 
         void onSuccess();
+
+        void onFailure();
     }
 
     void login(String username, String password, OnLoginFinishedListener listener);

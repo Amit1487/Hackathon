@@ -61,6 +61,10 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         finish();
     }
 
+    @Override public void onError() {
+
+    }
+
     @Override public void onClick(View v) {
         presenter.validateCredentials(username.getText().toString(), password.getText().toString());
     }

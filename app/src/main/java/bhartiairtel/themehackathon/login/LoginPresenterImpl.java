@@ -42,4 +42,10 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
             loginView.navigateToHome();
         }
     }
+
+    @Override public void onFailure() {
+        if (loginView != null) {
+            loginView.navigateToHome();
+        }
+    }
 }

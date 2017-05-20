@@ -16,8 +16,9 @@ public class LoginInteractorImpl implements LoginInteractor {
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-
+//                response.body(); == is actuall response
                 //here check response and then pass it to listener
+                listener.onSuccess();
 
             }
 
@@ -25,6 +26,9 @@ public class LoginInteractorImpl implements LoginInteractor {
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
                 call.cancel();
+
+
+                listener.onFailure();
             }
         });
     }
