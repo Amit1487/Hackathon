@@ -1,6 +1,7 @@
 package bhartiairtel.themehackathon.network;
 
 
+import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.LoginResponse;
 import bhartiairtel.themehackathon.pojo.RegisterResponse;
 import retrofit2.Call;
@@ -14,7 +15,7 @@ import retrofit2.http.Query;
 
 public interface APIInterface {
     @POST("/smartbank/login")
-    Call<LoginResponse> loginUser(@Header("Content-Type") String headers, @Body String body);
+    Call<LoginResponse> loginUser(@Body LoginRequest body);
 
     @POST("/smartbank/register")
     Call<RegisterResponse> createUser(@Body String body);
