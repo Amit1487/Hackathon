@@ -27,9 +27,12 @@ public class ECheckPresenterImpl implements ECheckPresenter, ECheckInteractor.On
     }
 
     @Override
-    public void onSuccess(String result) {
+    public void onSuccess(CheckDetailsBody result) {
         if (eCheckView != null) {
-            eCheckView.onSuccess(result);
+
+            String res = result.getChequenumber();
+
+            eCheckView.onSuccess(res);
         }
     }
 

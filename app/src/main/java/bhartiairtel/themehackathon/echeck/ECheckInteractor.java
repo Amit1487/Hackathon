@@ -5,7 +5,7 @@ public interface ECheckInteractor {
 
     interface OnECheckCreatedListener {
 
-        void onSuccess(String result);
+        void onSuccess(CheckDetailsBody result);
 
         void onFailure(String errorMsg);
     }

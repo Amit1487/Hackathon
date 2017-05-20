@@ -26,16 +26,16 @@ public class ECheckInteractorImpl implements ECheckInteractor {
 
 
         Call call = APIClient.getClient().create(APIInterface.class).createCheck(createChequeRequestBean);
-        call.enqueue(new Callback<CommonResponse>() {
+        call.enqueue(new Callback<ECheckResponse>() {
 
             @Override
-            public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+            public void onResponse(Call<ECheckResponse> call, Response<ECheckResponse> response) {
 
-                CommonResponse commonRes = response.body();
+                ECheckResponse commonRes = response.body();
 
                 MessageBean msgBean = commonRes.getMessageBean();
                 if (msgBean.getStatuscode() == 200) {
-                    listener.onSuccess((String) msgBean.getMessage());
+                    listener.onSuccess(commonRes.getResult());
                 } else {
                     try {
                         listener.onFailure((String) msgBean.getMessage());
@@ -49,7 +49,7 @@ public class ECheckInteractorImpl implements ECheckInteractor {
 
 
             @Override
-            public void onFailure(Call<CommonResponse> call, Throwable t) {
+            public void onFailure(Call<ECheckResponse> call, Throwable t) {
                 call.cancel();
                 listener.onFailure(t.getMessage());
             }

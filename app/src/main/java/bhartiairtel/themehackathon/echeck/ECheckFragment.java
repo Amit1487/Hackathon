@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Spinner;
 
 import bhartiairtel.themehackathon.R;
+import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CommonUtilities;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 
@@ -135,11 +136,19 @@ public class ECheckFragment extends Fragment implements ECheckView {
 
     @Override
     public void onSuccess(String result) {
-
+        new AlertDialog(this.getContext(), AlertDialog.SUCCESS_TYPE).
+                setTitleText("Congratulations!")
+                .setContentText("Check successfully created check number "+result)
+                .setConfirmText("OK")
+                .setConfirmClickListener(null).show();
     }
 
     @Override
     public void onError(String err) {
-
+        new AlertDialog(this.getContext(), AlertDialog.ERROR_TYPE).
+                setTitleText("Oops!")
+                .setContentText(err)
+                .setConfirmText("OK")
+                .setConfirmClickListener(null).show();
     }
 }

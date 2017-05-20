@@ -80,6 +80,7 @@ public class CommonUtilities {
 
                             if (mEtPin.getText().toString().length() > 3) {
                                 mDialog.dismiss();
+                                if(null != listener)
                                 listener.onEntered(mEtPin.getText().toString());
 //                                return mEtPin.getText().toString();
                             } else {
