@@ -43,13 +43,14 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
 
     String userName, mPin;
+    GetUserDetailsResponseBean result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-
-        userName = getIntent().getStringExtra("user_name");
+        result = getIntent().getParcelableExtra("result");
+        userName = result.getMobilenumber();//getIntent().getStringExtra("user_name");
         mPin = getIntent().getStringExtra("mpin");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -67,56 +68,6 @@ public class NavigationDrawerActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, AdsFragment.newInstance("", "")).commit();
 
-        requestUsersDetail();
-    }
-
-    private void requestUsersDetail() {
-
-        LoginRequest loginRequest = new LoginRequest();
-        loginRequest.setUsername(userName);
-
-        Call call = APIClient.getClient().create(APIInterface.class).loginUser(loginRequest);
-        call.enqueue(new Callback<CommonResponse>() {
-
-                         @Override
-                         public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
-
-                             CommonResponse commonResponse = response.body();
-
-                             MessageBean msgBean = commonResponse.getMessageBean();
-                             if (msgBean.getStatuscode() == 200) {
-                                 //display UI
-                                 displayUi((GetUserDetailsResponseBean) commonResponse.getResult());
-                             } else {
-
-                                 String msg = "Some Issues";
-                                 try {
-                                     msg = (String) msgBean.getMessage();
-                                 } catch (ClassCastException e) {
-
-                                 } catch (Exception e) {
-
-                                 }
-
-                                 new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
-                                         .setTitleText("Oops...")
-                                         .setContentText(msg)
-                                         .show();
-                             }
-                         }
-
-                         @Override
-                         public void onFailure(Call<CommonResponse> call, Throwable t) {
-                             call.cancel();
-                             new AlertDialog(NavigationDrawerActivity.this, AlertDialog.ERROR_TYPE)
-                                     .setTitleText("Oops...")
-                                     .setContentText("Something went wrong.")
-                                     .show();
-                         }
-
-                     }
-
-        );
     }
 
     private void displayUi(GetUserDetailsResponseBean result) {

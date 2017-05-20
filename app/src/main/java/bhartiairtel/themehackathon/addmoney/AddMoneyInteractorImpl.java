@@ -15,8 +15,8 @@ public class AddMoneyInteractorImpl implements AddMoneyInteractor {
     public void addMoney(String userName, String mPin, String amount, String account, String bankName, final OnAddMoneyFinishedListener listener) {
 
         AddMoneyRequestBean addMoneyRequest = new AddMoneyRequestBean();
-        addMoneyRequest.setUsername("");
-        addMoneyRequest.setMpin("");
+        addMoneyRequest.setUsername(userName);
+        addMoneyRequest.setMpin(mPin);
         addMoneyRequest.setAmount(amount);
 
 
