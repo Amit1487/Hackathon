@@ -28,6 +28,7 @@ import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
 import bhartiairtel.themehackathon.echeck.ECheckFragment;
+import bhartiairtel.themehackathon.encash.EnCashCheckFragment;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
@@ -54,7 +55,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-        result = (GetUserDetailsResponseBean)getIntent().getSerializableExtra("result");
+        result = (GetUserDetailsResponseBean) getIntent().getSerializableExtra("result");
         userName = result.getMobilenumber();//getIntent().getStringExtra("user_name");
         mPin = getIntent().getStringExtra("mpin");
 
@@ -131,7 +132,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.dependent_accounts) {
 
         } else if (id == R.id.en_cash) {
-
+            fragment = EnCashCheckFragment.newInstance("", "");
         }
 
         getSupportFragmentManager().beginTransaction()
