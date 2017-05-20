@@ -54,7 +54,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-        result = getIntent().getParcelableExtra("result");
+        result = (GetUserDetailsResponseBean)getIntent().getSerializableExtra("result");
         userName = result.getMobilenumber();//getIntent().getStringExtra("user_name");
         mPin = getIntent().getStringExtra("mpin");
 

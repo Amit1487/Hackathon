@@ -18,6 +18,7 @@ import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
 import bhartiairtel.themehackathon.pojo.MessageBean;
+import bhartiairtel.themehackathon.pojo.UserDetailsResponse;
 import bhartiairtel.themehackathon.register.RegisterActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -97,12 +98,12 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         loginRequest.setUsername(mTilUsernameWrapper.getEditText().getText().toString());
 
         Call call = APIClient.getClient().create(APIInterface.class).getUserDetails(loginRequest);
-        call.enqueue(new Callback<CommonResponse>() {
+        call.enqueue(new Callback<UserDetailsResponse>() {
 
                          @Override
-                         public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+                         public void onResponse(Call<UserDetailsResponse> call, Response<UserDetailsResponse> response) {
 
-                             CommonResponse commonResponse = response.body();
+                             UserDetailsResponse commonResponse = response.body();
 
                              MessageBean msgBean = commonResponse.getMessageBean();
                              if (msgBean.getStatuscode() == 200) {
@@ -127,7 +128,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
                          }
 
                          @Override
-                         public void onFailure(Call<CommonResponse> call, Throwable t) {
+                         public void onFailure(Call<UserDetailsResponse> call, Throwable t) {
                              call.cancel();
                              new AlertDialog(LoginActivity.this, AlertDialog.ERROR_TYPE)
                                      .setTitleText("Oops...")
@@ -141,9 +142,9 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     }
 
     private void onUseretail(GetUserDetailsResponseBean result) {
-        Intent in = new Intent();
+        Intent in = new Intent(this, NavigationDrawerActivity.class);
         in.putExtra("result", result);
-        startActivity(new Intent(this, NavigationDrawerActivity.class));
+        startActivity(in);
         finish();
     }
 
