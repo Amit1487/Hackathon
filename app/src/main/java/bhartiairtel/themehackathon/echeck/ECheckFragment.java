@@ -78,9 +78,9 @@ public class ECheckFragment extends Fragment implements ECheckView {
         super.onViewCreated(view, savedInstanceState);
         mPresenter = new ECheckPresenterImpl(this);
         mTilUsrName = (TextInputLayout) view.findViewById(R.id.til_uname);
-        mTilMobile = (TextInputLayout) view.findViewById(R.id.til_uname);
-        mTilAmount = (TextInputLayout) view.findViewById(R.id.til_uname);
-        mTilDocNo = (TextInputLayout) view.findViewById(R.id.til_uname);
+        mTilMobile = (TextInputLayout) view.findViewById(R.id.til_mob);
+        mTilAmount = (TextInputLayout) view.findViewById(R.id.til_amt);
+        mTilDocNo = (TextInputLayout) view.findViewById(R.id.til_docno);
         mSpinnerDocType = (Spinner) view.findViewById(R.id.spn_region);
 
         view.findViewById(R.id.btn_submit).setOnClickListener(new View.OnClickListener() {
