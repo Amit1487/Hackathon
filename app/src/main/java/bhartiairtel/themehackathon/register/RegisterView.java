@@ -6,9 +6,15 @@ public interface RegisterView {
 
     void hideProgress();
 
-    void setUsernameError();
+    void setUsernameError(boolean error);
 
-    void setPasswordError();
+    void setMobileNumberError(boolean error);
+
+    void setEmailError(boolean error);
+
+    void setPasswordError(boolean error);
 
     void navigateToHome();
+
+    void onError();
 }

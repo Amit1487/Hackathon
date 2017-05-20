@@ -171,13 +171,13 @@
 
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/app_button_bg"
             android:fontFamily="sans-serif-light"
-            android:text="Save"
+            android:text="SIGN-UP"
+            android:textStyle="bold"
             android:textColor="@color/white_color" />
 
     </LinearLayout>

@@ -3,14 +3,13 @@ package bhartiairtel.themehackathon.register;
 
 public interface RegisterInteractor {
 
-    interface OnLoginFinishedListener {
-        void onUsernameError();
-
-        void onPasswordError();
+    interface OnRegisterFinishedListener {
 
         void onSuccess();
+
+        void onFailure();
     }
 
-    void login(String username, String password, OnLoginFinishedListener listener);
+    void registerUser(String username,String mobileNun,String emailId,String userType, String password, String cnfPassword, OnRegisterFinishedListener listener);
 
 }

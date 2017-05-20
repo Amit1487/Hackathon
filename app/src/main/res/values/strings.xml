@@ -20,6 +20,12 @@
 
     <string name="hint_usr_name">Phone Number</string>
     <string name="hint_pass">Password</string>
+    <string name="hint_mob_num">Mobile Number</string>
+    <string name="hint_email">Email id</string>
+    <string name="hint_pwd">Password</string>
+    <string name="hint_cnf_pwd">Confirm Password</string>
+    <string name="name_error">Error : Invalid Name</string>
+    <string name="email_error">Error : Invalid EmailId</string>
 
 
     <string-array name="array_doc">

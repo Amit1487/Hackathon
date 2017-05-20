@@ -1,7 +1,9 @@
 
 package bhartiairtel.themehackathon.register;
 
-public class RegisterPresenterImpl implements RegisterPresenter, RegisterInteractor.OnLoginFinishedListener {
+import bhartiairtel.themehackathon.commonutils.CommonUtilities;
+
+public class RegisterPresenterImpl implements RegisterPresenter, RegisterInteractor.OnRegisterFinishedListener {
 
     private RegisterView registerView;
     private RegisterInteractor registerInteractor;
@@ -12,12 +14,42 @@ public class RegisterPresenterImpl implements RegisterPresenter, RegisterInterac
     }
 
     @Override
-    public void validateCredentials(String username, String password) {
+    public void validateInput(String username,String mobileNun,String emailId,String userType, String password, String cnfPassword) {
         if (registerView != null) {
             registerView.showProgress();
         }
 
-        registerInteractor.login(username, password, this);
+        if (username.length()>4){
+            registerView.setUsernameError(false);
+            if(CommonUtilities.isValidPhoneNumber(mobileNun)){
+                registerView.setMobileNumberError(false);
+
+                if(CommonUtilities.validateEmail(emailId)){
+                    registerView.setEmailError(false);
+                    if(password.length()>0) {
+                        if (password.equals(cnfPassword)) {
+                            registerView.setPasswordError(false);
+
+                            registerInteractor.registerUser(username,mobileNun,emailId,userType, password, cnfPassword, this);
+
+                        } else {
+                            registerView.setPasswordError(true);
+                        }
+                    }else{
+                        registerView.setPasswordError(true);
+                    }
+                }else{
+                    registerView.setEmailError(true);
+                }
+
+            }else{
+                registerView.setMobileNumberError(true);
+            }
+        }else{
+            registerView.setUsernameError(true);
+        }
+
+
     }
 
     @Override
@@ -26,25 +58,17 @@ public class RegisterPresenterImpl implements RegisterPresenter, RegisterInterac
     }
 
     @Override
-    public void onUsernameError() {
-        if (registerView != null) {
-            registerView.setUsernameError();
-            registerView.hideProgress();
-        }
-    }
-
-    @Override
-    public void onPasswordError() {
-        if (registerView != null) {
-            registerView.setPasswordError();
-            registerView.hideProgress();
-        }
-    }
-
-    @Override
     public void onSuccess() {
         if (registerView != null) {
             registerView.navigateToHome();
         }
     }
+
+    @Override
+    public void onFailure() {
+        if (registerView != null) {
+            registerView.onError();
+        }
+    }
+
 }

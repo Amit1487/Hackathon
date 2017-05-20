@@ -1,59 +1,113 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginTop="16dp"
-    android:gravity="center"
-    android:orientation="vertical">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="horizontal">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/usernameWrapper"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50dp"
+        android:background="@color/airtel_red_color"
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:gravity="center_vertical"
-            android:hint="Phone Number"
-            android:inputType="number"
-            android:maxLength="10"
-            android:textColor="@android:color/black"
-            android:textColorHint="@color/colorAccent" />
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="Login"
+            android:textColor="@color/white_color"
+            android:textSize="20sp" />
 
-    </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/passWrapper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:gravity="center_vertical"
-            android:hint="password"
-            android:inputType="textPassword"
-            android:textColor="@android:color/black"
-            android:textColorHint="@color/colorAccent" />
-    </android.support.design.widget.TextInputLayout>
-
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        android:text="log_in" />
 
-    <ProgressBar
-        android:id="@+id/progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:visibility="gone" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_mob__wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/text_color_hint">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/et_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:digits="0123456789"
+                android:fontFamily="sans-serif-light"
+                android:hint="Mob No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/text_color_hint"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_mpin_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#666666">
+
+            <EditText
+                android:id="@+id/et_mpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:digits="0123456789"
+                android:fontFamily="sans-serif-light"
+                android:hint="mPIN"
+                android:inputType="numberPassword"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black_color"
+                android:textColorHint="@color/text_color_hint"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btn_reg_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/app_button_bg"
+                android:fontFamily="sans-serif-light"
+                android:text="Sign-up"
+                android:textColor="@color/white_color"
+                android:layout_margin="3dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:background="@drawable/app_button_bg"
+                android:fontFamily="sans-serif-light"
+                android:text="Submit"
+                android:textColor="@color/white_color"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
