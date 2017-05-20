@@ -13,4 +13,17 @@
     tools:context="bhartiairtel.themehackathon.main.NavigationDrawerActivity"
     tools:showIn="@layout/app_bar_navigation_drawer">
 
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <bhartiairtel.themehackathon.commonutils.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" />
+
 </RelativeLayout>

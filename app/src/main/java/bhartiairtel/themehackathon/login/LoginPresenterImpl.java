@@ -1,6 +1,8 @@
 
 package bhartiairtel.themehackathon.login;
 
+import bhartiairtel.themehackathon.commonutils.CommonUtilities;
+
 public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
 
     private LoginView loginView;
@@ -11,39 +13,55 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
         this.loginInteractor = new LoginInteractorImpl();
     }
 
-    @Override public void validateCredentials(String username, String password) {
+    @Override
+    public void validateCredentials(String username, String password) {
         if (loginView != null) {
             loginView.showProgress();
         }
-
-        loginInteractor.login(username, password, this);
+        if (CommonUtilities.isValidPhoneNumber(username)) {
+            loginView.setUsernameError(false);
+            if (CommonUtilities.validatePassword(password)) {
+                loginView.setPasswordError(false);
+                loginView.navigateToHome();
+//                loginInteractor.login(username, password, this);
+            } else {
+                loginView.setPasswordError(true);
+            }
+        } else {
+            loginView.setUsernameError(true);
+        }
     }
 
-    @Override public void onDestroy() {
+    @Override
+    public void onDestroy() {
         loginView = null;
     }
 
-    @Override public void onUsernameError() {
+    @Override
+    public void onUsernameError() {
         if (loginView != null) {
-            loginView.setUsernameError();
+            loginView.setUsernameError(true);
             loginView.hideProgress();
         }
     }
 
-    @Override public void onPasswordError() {
+    @Override
+    public void onPasswordError() {
         if (loginView != null) {
-            loginView.setPasswordError();
+            loginView.setPasswordError(true);
             loginView.hideProgress();
         }
     }
 
-    @Override public void onSuccess() {
+    @Override
+    public void onSuccess() {
         if (loginView != null) {
             loginView.navigateToHome();
         }
     }
 
-    @Override public void onFailure() {
+    @Override
+    public void onFailure() {
         if (loginView != null) {
             loginView.navigateToHome();
         }

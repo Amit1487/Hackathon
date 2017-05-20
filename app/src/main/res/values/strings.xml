@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ThemeHackathon</string>
     <string name="title_activity_main">Main</string>
-    <string name="username_error">Error</string>
-    <string name="password_error">error</string>
+    <string name="username_error">Error : Not a valid phone number!</string>
+    <string name="password_error">Error : Not a valid password!</string>
     <string name="title_activity_main2">Main2Activity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -10,4 +10,14 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+
+    <string name="hint_usr_name">Phone Number</string>
+    <string name="hint_pass">Password</string>
+
 </resources>
