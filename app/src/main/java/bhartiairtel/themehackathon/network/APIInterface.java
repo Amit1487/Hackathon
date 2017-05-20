@@ -4,6 +4,8 @@ package bhartiairtel.themehackathon.network;
 import bhartiairtel.themehackathon.addmoney.AddMoneyRequestBean;
 import bhartiairtel.themehackathon.echeck.CreateChequeRequestBean;
 import bhartiairtel.themehackathon.echeck.ECheckResponse;
+import bhartiairtel.themehackathon.encash.EnCashCheckRequest;
+import bhartiairtel.themehackathon.encash.EncashResponse;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
@@ -38,6 +40,11 @@ public interface APIInterface {
 
     @POST("/smartbank/getuserdetails")
     Call<UserDetailsResponse> getUserDetails(@Body LoginRequest body);
+
+    @POST("smartbank/getchequedetails")
+    Call<EncashResponse> requestCheckDetails(@Body EnCashCheckRequest body);
+
+    Call<CommonResponse> requestEncash(@Body EnCashCheckRequest enCashCheckRequest);
 /*
     @GET("/api/some?")
     Call<Response> method(@Query("page") String page);

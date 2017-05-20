@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhartiairtel.themehackathon.encash.EnCashCheckFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/airtel_red_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white_color"
+                android:textSize="20sp"
+                android:text="Encash eCheque" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#666666">
+
+                <EditText
+                    android:id="@+id/ed_chq_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="eCheque Number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black_color"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/app_button_bg"
+                android:fontFamily="sans-serif-light"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textColor="@color/white_color" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+                <TextView android:id="@+id/tv_from_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="30sp"
+                    android:text="Bearer Details" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_payee_mob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:text="Atul Gangwar" />
+
+                <TextView
+                    android:id="@+id/tv_payee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="9963011876" />
+
+                <TextView
+                    android:id="@+id/tv_id_proof_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rs 2000.00" />
+
+                <TextView
+                    android:id="@+id/tv_id_proof_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Adhaar Card" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="31856330978890" />
+
+                <TextView
+                    android:id="@+id/tv_check_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black_color"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="31856330978890" />
+
+
+                <Button
+                    android:id="@+id/btn_encash"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/app_button_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textColor="@color/white_color" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

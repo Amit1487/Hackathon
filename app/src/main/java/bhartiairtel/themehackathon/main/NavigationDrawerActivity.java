@@ -130,7 +130,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
             fragment = ECheckFragment.newInstance(userName, mPin);
         } else if (id == R.id.dependent_accounts) {
 
-        } else if (id == R.id.logout) {
+        } else if (id == R.id.en_cash) {
 
         }
 

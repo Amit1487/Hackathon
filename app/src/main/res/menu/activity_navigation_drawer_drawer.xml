@@ -25,9 +25,9 @@
             android:title="Dependent Acounts" />
 
         <item
-            android:id="@+id/logout"
+            android:id="@+id/en_cash"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Logout" />
+            android:title="En-Cash" />
     </group>
 
     <item android:title="Communicate">
