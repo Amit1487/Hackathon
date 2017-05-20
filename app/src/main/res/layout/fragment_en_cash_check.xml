@@ -88,7 +88,7 @@
                 <TextView android:id="@+id/tv_from_mobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"
@@ -100,18 +100,18 @@
                     android:id="@+id/tv_payee_mob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:text="Atul Gangwar" />
 
                 <TextView
                     android:id="@+id/tv_payee_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"
@@ -133,7 +133,7 @@
                     android:id="@+id/tv_id_proof_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"
@@ -144,7 +144,7 @@
                     android:id="@+id/tv_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"
@@ -155,7 +155,7 @@
                     android:id="@+id/tv_check_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black_color"
                     android:textSize="14sp"

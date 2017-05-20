@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -218,7 +219,11 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.dependent_accounts) {
 
         } else if (id == R.id.en_cash) {
-            fragment = EnCashCheckFragment.newInstance("", "");
+            if(result.getRoles().get(0).equalsIgnoreCase("vendor")) {
+                fragment = EnCashCheckFragment.newInstance("", "");
+            }else{
+                Toast.makeText(this,"You are not authorized",Toast.LENGTH_SHORT).show();
+            }
         }
         if (null != fragment)
             getSupportFragmentManager().beginTransaction()
