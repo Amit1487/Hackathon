@@ -54,49 +54,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EnCashCheckFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashCheckFragment.java">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="186" column="55" selection-start-line="186" selection-start-column="55" selection-end-line="186" selection-end-column="55" />
+            <state relative-caret-position="316">
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3193#3194#0" expanded="true" />
+                <element signature="e#3229#3230#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationDrawerActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java">
+      <file leaf-file-name="PreferanceManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/commonutils/PreferanceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+            <state relative-caret-position="215">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/network/APIInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_en_cash_check.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_en_cash_check.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1895,7 +1874,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/pojo/GetUserDetailsResponseBean.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginPresenterImpl.java" />
@@ -1920,7 +1898,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_echeck.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/commonutils/CommonUtilities.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_mpin.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/CheckDetailsBody.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckFragment.java" />
@@ -1929,7 +1906,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckPresenterImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckInteractor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/addmoney/AddMoneyFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_navigation_drawer_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashCheckRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EncashResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashResult.java" />
@@ -1945,13 +1921,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashChequeRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/network/APIInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashCheckFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_navigation_drawer_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/commonutils/PreferanceManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="23" />
+    <option name="x" value="-4" />
+    <option name="y" value="61" />
     <option name="width" value="1280" />
     <option name="height" value="717" />
   </component>
@@ -2080,62 +2059,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2174,41 +2097,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themehackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encash" />
+              <option name="myItemId" value="commonutils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2223,7 +2112,7 @@
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="Navi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Navigat&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;LoginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Common&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/CommonResponse.java&#10;Login&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Naviga&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;LoginAc&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;AddMo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/addmoney/AddMoneyFragment.java&#10;EChe&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckFragment.java&#10;Navig&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Nav&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Regist&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java&#10;AddMoney&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/addmoney/AddMoneyFragment.java&#10;color.&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;LoginA&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;ApiIN&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIInterface.java&#10;AddMoneyRequestBea&#9;PSI&#9;JAVA://com.airtel.producteng.smartbank.util.request.AddMoneyRequestBean&#10;Regis&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;Regi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;regist&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java&#10;LoginIn&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;Navigation&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Loginpre&#9;PSI&#9;JAVA://bhartiairtel.themehackathon.login.LoginPresenterImpl&#10;Loginres&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;LoginRes&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;Mess&#9;PSI&#9;JAVA://MessageBean&#10;activi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;LoginI&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;fra&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/fragment_offers.xml&#10;NavigationD&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;string&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Add&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/add_dependant_screen.xml&#10;activity_re&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_register.xml&#10;activityLo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;loginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;string.xml&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;String&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;style&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/styles.xml&#10;ProgressWheel&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/alertdialog/ProgressWheel.java&#10;blue_button_background&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/drawable/blue_button_background.xml&#10;APIClient&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIClient.java&#10;LoginPresenterImpl&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginPresenterImpl.java" />
+    <property name="SearchEverywhereHistoryKey" value="LoginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Navi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;naviga&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Navigat&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Common&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/CommonResponse.java&#10;Login&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;Naviga&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;LoginAc&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;AddMo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/addmoney/AddMoneyFragment.java&#10;EChe&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/echeck/ECheckFragment.java&#10;Navig&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Nav&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Regist&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java&#10;AddMoney&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/addmoney/AddMoneyFragment.java&#10;color.&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;LoginA&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;ApiIN&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIInterface.java&#10;AddMoneyRequestBea&#9;PSI&#9;JAVA://com.airtel.producteng.smartbank.util.request.AddMoneyRequestBean&#10;Regis&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;Regi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterInteractorImpl.java&#10;regist&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java&#10;LoginIn&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;Navigation&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;Loginpre&#9;PSI&#9;JAVA://bhartiairtel.themehackathon.login.LoginPresenterImpl&#10;Loginres&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;LoginRes&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/pojo/LoginResponse.java&#10;Mess&#9;PSI&#9;JAVA://MessageBean&#10;activi&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;LoginI&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginInteractorImpl.java&#10;fra&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/fragment_offers.xml&#10;NavigationD&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java&#10;string&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;Add&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/add_dependant_screen.xml&#10;activity_re&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_register.xml&#10;activityLo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/layout/activity_login.xml&#10;loginAct&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java&#10;string.xml&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/colors.xml&#10;String&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/strings.xml&#10;style&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/values/styles.xml&#10;ProgressWheel&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/alertdialog/ProgressWheel.java&#10;blue_button_background&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/res/drawable/blue_button_background.xml&#10;APIClient&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/network/APIClient.java&#10;LoginPresenterImpl&#9;FILE&#9;file:///Users/B0089798/Desktop/Hackathon/app/src/main/java/bhartiairtel/themehackathon/login/LoginPresenterImpl.java" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="device.picker.selection" value="T03850BXMY" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPropertiesWindowManager-NlEditorPanel.WIDTH" value="101" />
@@ -2566,7 +2455,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="23" width="1280" height="717" extended-state="0" />
+    <frame x="-4" y="61" width="1280" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2653,19 +2542,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java</url>
-          <line>144</line>
+          <line>154</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java</url>
-          <line>105</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java</url>
-          <line>99</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -2708,14 +2597,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/register/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="124" column="83" selection-start-line="124" selection-start-column="83" selection-end-line="124" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/AddMoneyRequestBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2769,8 +2650,8 @@
         <state relative-caret-position="105">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="false" />
+            <element signature="e#175#176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2871,7 +2752,7 @@
         <state relative-caret-position="240">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2941,34 +2822,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_navigation_drawer.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_navigation_drawer_drawer.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashCheckRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
-            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2978,34 +2837,7 @@
         <state relative-caret-position="273">
           <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3015,8 +2847,8 @@
         <state relative-caret-position="303">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3096,22 +2928,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/echeck/ChequeList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding>
-            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3121,8 +2943,8 @@
         <state relative-caret-position="315">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3154,7 +2976,7 @@
         <state relative-caret-position="180">
           <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3164,7 +2986,28 @@
         <state relative-caret-position="140">
           <caret line="102" column="70" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="70" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashChequeRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#364#365#0" expanded="false" />
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#483#484#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
+            <element signature="e#621#622#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#712#713#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3177,27 +3020,6 @@
         <state relative-caret-position="435">
           <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/encash/EnCashChequeRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3219,12 +3041,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_navigation_drawer_drawer.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_navigation_drawer.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/main/NavigationDrawerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+        <state relative-caret-position="215">
+          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/commonutils/PreferanceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/bhartiairtel/themehackathon/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3193#3194#0" expanded="true" />
+            <element signature="e#3229#3230#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -9,9 +9,12 @@ import android.view.View;
 import android.widget.EditText;
 
 
+import com.google.gson.Gson;
+
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CommonUtilities;
+import bhartiairtel.themehackathon.commonutils.PreferanceManager;
 import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
@@ -52,6 +55,10 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         findViewById(R.id.btn_reg_user).setOnClickListener(this);
 
         mPresenter = new LoginPresenterImpl(this);
+
+        if(PreferanceManager.getLogin(getApplicationContext())){
+            autoLogin();
+        }
     }
 
     @Override
@@ -142,8 +149,19 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     }
 
     private void onUseretail(GetUserDetailsResponseBean result) {
+
+        PreferanceManager.setLoginTrue(getApplicationContext());
+        PreferanceManager.storeJson(getApplicationContext(),new Gson().toJson(result).toString());
         Intent in = new Intent(this, NavigationDrawerActivity.class);
         in.putExtra("result", result);
+        startActivity(in);
+        finish();
+    }
+
+
+   public void  autoLogin(){
+        Intent in = new Intent(this, NavigationDrawerActivity.class);
+        in.putExtra("result", new Gson().fromJson(PreferanceManager.getJson(getApplicationContext()),GetUserDetailsResponseBean.class));
         startActivity(in);
         finish();
     }
