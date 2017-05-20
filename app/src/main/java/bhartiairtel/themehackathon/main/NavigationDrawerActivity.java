@@ -29,6 +29,7 @@ import bhartiairtel.themehackathon.addmoney.AddMoneyFragment;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
+import bhartiairtel.themehackathon.dependents.AddDependentsFragment;
 import bhartiairtel.themehackathon.echeck.ChequeListFragment;
 import bhartiairtel.themehackathon.echeck.ECheckFragment;
 import bhartiairtel.themehackathon.encash.EnCashCheckFragment;
@@ -148,7 +149,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                          @Override
                          public void onFailure(Call<UserDetailsResponse> call, Throwable t) {
                              call.cancel();
-                            
+
                          }
 
                      }
@@ -206,16 +207,16 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.transactions) {
             fragment = ChequeListFragment.newInstance("", "");
         } else if (id == R.id.better_together) {
-
+            fragment = AddDependentsFragment.newInstance(userName, mPin);
         } else if (id == R.id.create_cheque) {
             fragment = ECheckFragment.newInstance(userName, mPin);
         } else if (id == R.id.dependent_accounts) {
 
         } else if (id == R.id.en_cash) {
-            if(result.getRoles().get(0).equalsIgnoreCase("vendor")) {
+            if (result.getRoles().get(0).equalsIgnoreCase("vendor")) {
                 fragment = EnCashCheckFragment.newInstance("", "");
-            }else{
-                Toast.makeText(this,"You are not authorized",Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "You are not authorized", Toast.LENGTH_SHORT).show();
             }
         }
         if (null != fragment)

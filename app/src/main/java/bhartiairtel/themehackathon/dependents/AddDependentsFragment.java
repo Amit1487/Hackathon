@@ -124,8 +124,8 @@ public class AddDependentsFragment extends Fragment {
                                                          //display UI
 //                                                         onUseretail((GetUserDetailsResponseBean) commonResponse.getResult());
 
-                                                         new AlertDialog(getActivity(), AlertDialog.ERROR_TYPE)
-                                                                 .setTitleText("Congrats")
+                                                         new AlertDialog(getActivity(), AlertDialog.SUCCESS_TYPE)
+                                                                 .setTitleText("")
                                                                  .setContentText((String) msgBean.getMessage())
                                                                  .show();
                                                      } else {
