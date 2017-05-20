@@ -19,7 +19,7 @@ public interface APIInterface {
     Call<LoginResponse> loginUser(@Body LoginRequest body);
 
     @POST("/smartbank/register")
-    Call<RegisterResponse> createUser(@Body RegisterRequest body);
+    Call<LoginResponse> createUser(@Body RegisterRequest body);
 
     @POST("/smartbank/logmeout")
     Call<LoginResponse> logMeOut(@Header("username") String username, @Header("Authorization") String token, String body);
