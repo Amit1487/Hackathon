@@ -14,10 +14,10 @@ import retrofit2.http.Query;
 
 public interface APIInterface {
     @POST("/smartbank/login")
-    Call<LoginResponse> loginUser(String body);
+    Call<LoginResponse> loginUser(@Header("Content-Type") String headers, @Body String body);
 
     @POST("/smartbank/register")
-    Call<RegisterResponse> createUser(String body);
+    Call<RegisterResponse> createUser(@Body String body);
 
     @POST("/smartbank/logmeout")
     Call<LoginResponse> logMeOut(@Header("username") String username, @Header("Authorization") String token, String body);
