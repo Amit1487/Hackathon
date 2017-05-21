@@ -28,6 +28,7 @@ import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.addmoney.AddMoneyFragment;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.commonutils.CirclePageIndicator;
+import bhartiairtel.themehackathon.commonutils.PreferanceManager;
 import bhartiairtel.themehackathon.commonutils.SlidingImageAdapter;
 import bhartiairtel.themehackathon.dependents.AddDependentsFragment;
 import bhartiairtel.themehackathon.echeck.ChequeListFragment;
@@ -126,7 +127,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                          public void onResponse(Call<UserDetailsResponse> call, Response<UserDetailsResponse> response) {
 
                              UserDetailsResponse commonResponse = response.body();
-                             if(commonResponse == null){
+                             if (commonResponse == null) {
                                  return;
                              }
                              MessageBean msgBean = commonResponse.getMessageBean();
@@ -213,7 +214,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.create_cheque) {
             fragment = ECheckFragment.newInstance(userName, mPin);
         } else if (id == R.id.dependent_accounts) {
-
+            PreferanceManager.clear(getApplicationContext());
+            finish();
         } else if (id == R.id.en_cash) {
             if (result.getRoles().get(0).equalsIgnoreCase("vendor")) {
                 fragment = EnCashCheckFragment.newInstance("", "");

@@ -37,4 +37,11 @@ public class PreferanceManager {
         boolean data = sharedPref.getBoolean("login", false);
         return data;
     }
+
+    public static void clear(Context context){
+        SharedPreferences preferences = context.getSharedPreferences("my_pref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.commit();
+    }
 }
