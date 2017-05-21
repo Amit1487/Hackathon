@@ -77,6 +77,9 @@ public class PullMoneyFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+
+                CommonUtilities.hideKeyboard(getContext(), view);
+
                 String userName = ((NavigationDrawerActivity) getActivity()).getResult().getMobilenumber();
                 String amount = mTilAmnt.getEditText().getText().toString();
 
