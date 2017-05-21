@@ -168,8 +168,8 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
     }
 
     private void onUseretail(GetUserDetailsResponseBean result) {
-        Intent in = new Intent(this, NavigationDrawerActivity.class);
-        in.putExtra("result", result);
+        Intent in = new Intent(this, LoginActivity.class);
+        //in.putExtra("result", result);
 //        in.putExtra("user_name", mTilUsernameWrapper.getEditText().getText().toString());
 //        in.putExtra("mpin", mTilPasswordWrapper.getEditText().getText().toString());
         startActivity(in);

@@ -109,12 +109,15 @@ public class ChequeListFragment extends Fragment {
                              CheResponseque commonResponse = response.body();
 
                              MessageBean msgBean = commonResponse.getMessageBean();
-                             if (msgBean.getStatuscode() == 200) {
+                             if (msgBean.getStatuscode() == 200 && commonResponse.getResult() != null ) {
                                  //display UI
                                  listView.setAdapter(new CustomListAdapter(getContext(), commonResponse.getResult().getAllchequelist()));
                              } else {
 
                                  String msg = "Some Issues";
+                                 if(commonResponse.getResult() == null){
+                                     msg = "No Records";
+                                 }
                                  try {
                                      msg = (String) msgBean.getMessage();
                                  } catch (ClassCastException e) {

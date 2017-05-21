@@ -61,11 +61,14 @@ public class CustomListAdapter extends BaseAdapter {
 
         TextView issuedate = (TextView)
                 convertView.findViewById(R.id.issue_date);
+        TextView amount = (TextView)
+                convertView.findViewById(R.id.amount);
 
         //sets the text for item name and item description from the current item object
-        textViewItemName.setText("Cheque Number : " + currentItem.getChequenumber());
-        textViewItemDescription.setText("Id Number " + currentItem.getIdnumber());
+        textViewItemName.setText("Cheque No. : " + currentItem.getChequenumber());
+        textViewItemDescription.setText("Issued to : " + currentItem.getPayeename());
         issuedate.setText("Date : " + currentItem.getIssuedate());
+        amount.setText("Amount : "+currentItem.getAmount());
         // returns the view for the current row
         return convertView;
     }

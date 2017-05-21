@@ -126,7 +126,9 @@ public class NavigationDrawerActivity extends AppCompatActivity
                          public void onResponse(Call<UserDetailsResponse> call, Response<UserDetailsResponse> response) {
 
                              UserDetailsResponse commonResponse = response.body();
-
+                             if(commonResponse == null){
+                                 return;
+                             }
                              MessageBean msgBean = commonResponse.getMessageBean();
                              if (msgBean.getStatuscode() == 200) {
                                  //display UI
