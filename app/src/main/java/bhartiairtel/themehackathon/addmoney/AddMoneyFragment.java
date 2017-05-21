@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
@@ -70,13 +71,15 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
         return inflater.inflate(R.layout.fragment_add_money, container, false);
     }
 
+    ProgressBar progressBar;
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mTilAmount = (TextInputLayout) view.findViewById(R.id.til_amt);
         mTilAccNumber = (TextInputLayout) view.findViewById(R.id.til_acc);
         mTilBankName = (TextInputLayout) view.findViewById(R.id.til_bank);
-
+        progressBar = (ProgressBar) view.findViewById(R.id.progress);
         view.findViewById(R.id.btn_submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,16 +99,17 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
 
     @Override
     public void showProgress() {
-
+        progressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideProgress() {
-
+        progressBar.setVisibility(View.GONE);
     }
 
     @Override
     public void setAmountError(boolean isError) {
+        progressBar.setVisibility(View.GONE);
         if (isError)
             mTilAmount.setError(getString(R.string.invalid_amnt));
         else
@@ -114,6 +118,7 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
 
     @Override
     public void setAccountError(boolean isError) {
+        progressBar.setVisibility(View.GONE);
         if (isError)
             mTilAccNumber.setError(getString(R.string.invalid_acc));
         else
@@ -122,6 +127,7 @@ public class AddMoneyFragment extends Fragment implements AddMoneyView {
 
     @Override
     public void setBankError(boolean isError) {
+        progressBar.setVisibility(View.GONE);
         if (isError)
             mTilBankName.setError(getString(R.string.invalid_bank));
         else

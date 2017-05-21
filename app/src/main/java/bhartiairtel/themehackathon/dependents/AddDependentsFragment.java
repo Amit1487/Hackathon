@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
@@ -32,14 +33,8 @@ import retrofit2.Response;
  * create an instance of this fragment.
  */
 public class AddDependentsFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private ProgressBar progressBar;
 
 
     public AddDependentsFragment() {
@@ -55,11 +50,9 @@ public class AddDependentsFragment extends Fragment {
      * @return A new instance of fragment AddDependents.
      */
     // TODO: Rename and change types and number of parameters
-    public static AddDependentsFragment newInstance(String param1, String param2) {
+    public static AddDependentsFragment newInstance() {
         AddDependentsFragment fragment = new AddDependentsFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -67,10 +60,7 @@ public class AddDependentsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
@@ -92,7 +82,10 @@ public class AddDependentsFragment extends Fragment {
         mTilRelation = (TextInputLayout) view.findViewById(R.id.til_relation);
         mTilAmnt = (TextInputLayout) view.findViewById(R.id.til_amt);
         submit = (Button) view.findViewById(R.id.btn_submit);
-        final GetUserDetailsResponseBean result = ((NavigationDrawerActivity)this.getActivity()).getResult();
+
+        progressBar = (ProgressBar) view.findViewById(R.id.progress);
+
+        final GetUserDetailsResponseBean result = ((NavigationDrawerActivity) this.getActivity()).getResult();
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,7 +99,7 @@ public class AddDependentsFragment extends Fragment {
 
                             if (mTilAmnt.getEditText().getText().toString().length() > 0) {
                                 mTilAmnt.setErrorEnabled(false);
-
+                                progressBar.setVisibility(View.VISIBLE);
                                 AddDependentsRequest addDependentsRequest = new AddDependentsRequest();
                                 addDependentsRequest.setUsername(result.getMobilenumber().toString());
                                 addDependentsRequest.setDependentmobile(mTilMob.getEditText().getText().toString());
@@ -119,6 +112,7 @@ public class AddDependentsFragment extends Fragment {
                                                  @Override
                                                  public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
 
+                                                     progressBar.setVisibility(View.GONE);
                                                      CommonResponse commonResponse = response.body();
 
                                                      MessageBean msgBean = commonResponse.getMessageBean();
@@ -151,6 +145,7 @@ public class AddDependentsFragment extends Fragment {
                                                  @Override
                                                  public void onFailure(Call<CommonResponse> call, Throwable t) {
                                                      call.cancel();
+                                                     progressBar.setVisibility(View.GONE);
                                                      new AlertDialog(getActivity(), AlertDialog.ERROR_TYPE)
                                                              .setTitleText("Oops...")
                                                              .setContentText("Something went wrong.")

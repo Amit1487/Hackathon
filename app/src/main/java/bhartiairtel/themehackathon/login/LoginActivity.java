@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 
 import com.google.gson.Gson;
@@ -29,7 +30,7 @@ import retrofit2.Response;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
 
-    //    private ProgressBar progressBar;
+        private ProgressBar progressBar;
     private EditText mEtMobileNumber;
     private EditText mEtMPin;
     private LoginPresenter mPresenter;
@@ -41,7 +42,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        progressBar = (ProgressBar) findViewById(R.id.progress);
+        progressBar = (ProgressBar) findViewById(R.id.progress);
 
         mTilUsernameWrapper = (TextInputLayout) findViewById(R.id.til_mob__wrapper);
         mTilUsernameWrapper.setHint(getString(R.string.hint_mob_num));
@@ -69,16 +70,17 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
 
     @Override
     public void showProgress() {
-//        progressBar.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideProgress() {
-//        progressBar.setVisibility(View.GONE);
+        progressBar.setVisibility(View.GONE);
     }
 
     @Override
     public void setUsernameError(boolean isError) {
+        progressBar.setVisibility(View.GONE);
         if (isError)
             mTilUsernameWrapper.setError(getString(R.string.username_error));
         else
@@ -87,6 +89,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
 
     @Override
     public void setPasswordError(boolean isError) {
+        progressBar.setVisibility(View.GONE);
         if (isError)
             mTilPasswordWrapper.setError(getString(R.string.password_error));
         else

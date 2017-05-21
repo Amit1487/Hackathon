@@ -12,13 +12,9 @@ import android.widget.Spinner;
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.login.LoginActivity;
-import bhartiairtel.themehackathon.login.LoginPresenter;
 import bhartiairtel.themehackathon.login.LoginRequest;
-import bhartiairtel.themehackathon.main.MainActivity;
-import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
-import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
 import bhartiairtel.themehackathon.pojo.MessageBean;
 import bhartiairtel.themehackathon.pojo.UserDetailsResponse;
@@ -33,12 +29,13 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     TextInputLayout mTilUsernameWrapper, mTilMobNumWrapper, mTilEmailWrapper, mTilPwdWrapper, mTilCnfPwdWrapper;
     Spinner mSpinnerUserType;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        progressBar = (ProgressBar) findViewById(R.id.progress);
         mTilUsernameWrapper = (TextInputLayout) findViewById(R.id.til_uname);
         mTilUsernameWrapper.setHint(getString(R.string.hint_usr_name));
         mTilMobNumWrapper = (TextInputLayout) findViewById(R.id.til_mob);
@@ -71,16 +68,17 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void showProgress() {
-//        progressBar.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideProgress() {
-//        progressBar.setVisibility(View.GONE);
+        progressBar.setVisibility(View.GONE);
     }
 
     @Override
     public void setUsernameError(boolean error) {
+        progressBar.setVisibility(View.GONE);
         if (error)
             mTilUsernameWrapper.setError(getString(R.string.name_error));
         else
@@ -89,6 +87,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void setPasswordError(boolean error) {
+        progressBar.setVisibility(View.GONE);
         if (error)
             mTilCnfPwdWrapper.setError(getString(R.string.password_error));
         else
@@ -97,6 +96,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void setEmailError(boolean error) {
+        progressBar.setVisibility(View.GONE);
         if (error)
             mTilEmailWrapper.setError(getString(R.string.email_error));
         else
@@ -105,6 +105,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     @Override
     public void setMobileNumberError(boolean error) {
+        progressBar.setVisibility(View.GONE);
         if (error)
             mTilMobNumWrapper.setError(getString(R.string.username_error));
         else
@@ -120,6 +121,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
     private void requestUsersDetail() {
 
+        progressBar.setVisibility(View.VISIBLE);
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername(mTilUsernameWrapper.getEditText().getText().toString());
 
@@ -128,7 +130,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
 
                          @Override
                          public void onResponse(Call<UserDetailsResponse> call, Response<UserDetailsResponse> response) {
-
+                             progressBar.setVisibility(View.GONE);
                              UserDetailsResponse commonResponse = response.body();
 
                              MessageBean msgBean = commonResponse.getMessageBean();
@@ -156,6 +158,7 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
                          @Override
                          public void onFailure(Call<UserDetailsResponse> call, Throwable t) {
                              call.cancel();
+                             progressBar.setVisibility(View.GONE);
                              new AlertDialog(RegisterActivity.this, AlertDialog.ERROR_TYPE)
                                      .setTitleText("Oops...")
                                      .setContentText("Something went wrong.")

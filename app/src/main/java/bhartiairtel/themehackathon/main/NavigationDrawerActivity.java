@@ -214,9 +214,9 @@ public class NavigationDrawerActivity extends AppCompatActivity
         if (id == R.id.add_money) {
             fragment = AddMoneyFragment.newInstance(userName, mPin);
         } else if (id == R.id.transactions) {
-            fragment = ChequeListFragment.newInstance("", "");
+            fragment = ChequeListFragment.newInstance();
         } else if (id == R.id.better_together) {
-            fragment = AddDependentsFragment.newInstance(userName, mPin);
+            fragment = AddDependentsFragment.newInstance();
         } else if (id == R.id.create_cheque) {
             fragment = ECheckFragment.newInstance(userName, mPin);
         } else if (id == R.id.dependent_accounts) {

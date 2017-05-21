@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
@@ -30,15 +31,9 @@ import retrofit2.Response;
  * create an instance of this fragment.
  */
 public class ChequeListFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
     private ListView listView;
+    private ProgressBar progressBar;
 
 
     public ChequeListFragment() {
@@ -48,17 +43,12 @@ public class ChequeListFragment extends Fragment {
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment ChequeListFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChequeListFragment newInstance(String param1, String param2) {
+    public static ChequeListFragment newInstance() {
         ChequeListFragment fragment = new ChequeListFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -66,10 +56,6 @@ public class ChequeListFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -83,6 +69,9 @@ public class ChequeListFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         listView = (ListView) view.findViewById(R.id.list);
+
+        progressBar = (ProgressBar) view.findViewById(R.id.progress);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -96,7 +85,7 @@ public class ChequeListFragment extends Fragment {
     }
 
     private void requestChequeLis() {
-
+progressBar.setVisibility(View.VISIBLE);
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername(((NavigationDrawerActivity) getActivity()).getResult().getMobilenumber());
 
@@ -106,6 +95,7 @@ public class ChequeListFragment extends Fragment {
                          @Override
                          public void onResponse(Call<CheResponseque> call, Response<CheResponseque> response) {
 
+                             progressBar.setVisibility(View.GONE);
                              CheResponseque commonResponse = response.body();
 
                              MessageBean msgBean = commonResponse.getMessageBean();
@@ -136,6 +126,7 @@ public class ChequeListFragment extends Fragment {
                          @Override
                          public void onFailure(Call<CheResponseque> call, Throwable t) {
                              call.cancel();
+                             progressBar.setVisibility(View.GONE);
                              new AlertDialog(getActivity(), AlertDialog.ERROR_TYPE)
                                      .setTitleText("Oops...")
                                      .setContentText("Something went wrong.")

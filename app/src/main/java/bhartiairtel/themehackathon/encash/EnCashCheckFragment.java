@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import bhartiairtel.themehackathon.R;
@@ -39,6 +40,7 @@ public class EnCashCheckFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private ProgressBar progressBar;
 
 
     public EnCashCheckFragment() {
@@ -88,6 +90,9 @@ public class EnCashCheckFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        progressBar = (ProgressBar) view.findViewById(R.id.progress);
+
         mTilCheckNo = (TextInputLayout) view.findViewById(R.id.til_uname);
 
 //info_layout-ll
@@ -136,6 +141,9 @@ public class EnCashCheckFragment extends Fragment {
     }
 
     private void requestCheckDetails(String userName, String mPin, String checkNo) {
+
+        progressBar.setVisibility(View.VISIBLE);
+
         final EnCashCheckRequest enCashCheckRequest = new EnCashCheckRequest();
         enCashCheckRequest.setUsername(userName);
         enCashCheckRequest.setMpin(mPin);
@@ -147,7 +155,7 @@ public class EnCashCheckFragment extends Fragment {
 
             @Override
             public void onResponse(Call<EncashResponse> call, Response<EncashResponse> response) {
-
+progressBar.setVisibility(View.GONE);
                 EncashResponse encashResponse = response.body();
 
                 MessageBean msgBean = encashResponse.getMessageBean();
@@ -166,6 +174,7 @@ public class EnCashCheckFragment extends Fragment {
             @Override
             public void onFailure(Call<EncashResponse> call, Throwable t) {
                 call.cancel();
+                progressBar.setVisibility(View.GONE);
                 new AlertDialog(EnCashCheckFragment.this.getContext(), AlertDialog.ERROR_TYPE).
                         setTitleText("Oops!")
                         .setContentText(t.getMessage())
@@ -227,6 +236,8 @@ public class EnCashCheckFragment extends Fragment {
     }
 
     private void requestEncashAmount(String userName, String checkNo, String mPin) {
+
+        progressBar.setVisibility(View.VISIBLE);
         final EnCashChequeRequest enCashCheckRequest = new EnCashChequeRequest();
         enCashCheckRequest.setUsername(userName);
         enCashCheckRequest.setMpin(mPin);
@@ -238,7 +249,7 @@ public class EnCashCheckFragment extends Fragment {
 
             @Override
             public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
-
+                progressBar.setVisibility(View.GONE);
                 CommonResponse encashResponse = response.body();
 
                 MessageBean msgBean = encashResponse.getMessageBean();
@@ -262,6 +273,7 @@ public class EnCashCheckFragment extends Fragment {
             @Override
             public void onFailure(Call<CommonResponse> call, Throwable t) {
                 call.cancel();
+                progressBar.setVisibility(View.GONE);
                 new AlertDialog(EnCashCheckFragment.this.getContext(), AlertDialog.ERROR_TYPE).
                         setTitleText("Oops!")
                         .setContentText(t.getMessage())

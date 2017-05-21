@@ -17,7 +17,9 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
         if (addMoneyView != null) {
             addMoneyView.showProgress();
         }
-
+if(amount.trim().length()==0){
+    amount ="0";
+}
         if (Integer.parseInt(amount) >= 10) {
             addMoneyView.setAmountError(false);
 
@@ -26,6 +28,7 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
 
                 if (bankName.length() > 0) {
                     addMoneyView.setBankError(false);
+                    addMoneyView.showProgress();
                     addMoneyInteractor.addMoney(userName, mPin, amount, account, bankName, this);
 
                 } else {
@@ -50,6 +53,7 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
     @Override
     public void onSuccess(String result) {
         if (addMoneyView != null) {
+            addMoneyView.hideProgress();
             addMoneyView.onSuccess(result);
         }
     }
@@ -57,6 +61,7 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
     @Override
     public void onFailure(String errMsg) {
         if (addMoneyView != null) {
+            addMoneyView.hideProgress();
             addMoneyView.onError(errMsg);
         }
     }
