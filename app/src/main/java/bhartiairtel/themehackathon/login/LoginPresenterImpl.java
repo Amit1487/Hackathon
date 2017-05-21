@@ -1,22 +1,7 @@
-/*
- *
- *  * Copyright (C) 2014 Antonio Leiva Gordillo.
- *  *
- *  * Licensed under the Apache License, Version 2.0 (the "License");
- *  * you may not use this file except in compliance with the License.
- *  * You may obtain a copy of the License at
- *  *
- *  *      http://www.apache.org/licenses/LICENSE-2.0
- *  *
- *  * Unless required by applicable law or agreed to in writing, software
- *  * distributed under the License is distributed on an "AS IS" BASIS,
- *  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  * See the License for the specific language governing permissions and
- *  * limitations under the License.
- *
- */
 
 package bhartiairtel.themehackathon.login;
+
+import bhartiairtel.themehackathon.commonutils.CommonUtilities;
 
 public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
 
@@ -28,35 +13,41 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
         this.loginInteractor = new LoginInteractorImpl();
     }
 
-    @Override public void validateCredentials(String username, String password) {
+    @Override
+    public void validateCredentials(String username, String password) {
         if (loginView != null) {
             loginView.showProgress();
         }
-
-        loginInteractor.login(username, password, this);
+        if (CommonUtilities.isValidPhoneNumber(username)) {
+            loginView.setUsernameError(false);
+            if (CommonUtilities.validatePassword(password)) {
+                loginView.setPasswordError(false);
+//                loginView.navigateToHome();
+                loginInteractor.login(username, password, this);
+            } else {
+                loginView.setPasswordError(true);
+            }
+        } else {
+            loginView.setUsernameError(true);
+        }
     }
 
-    @Override public void onDestroy() {
+    @Override
+    public void onDestroy() {
         loginView = null;
     }
 
-    @Override public void onUsernameError() {
+    @Override
+    public void onSuccess(Object result) {
         if (loginView != null) {
-            loginView.setUsernameError();
-            loginView.hideProgress();
+            loginView.onSuccess(result);
         }
     }
 
-    @Override public void onPasswordError() {
+    @Override
+    public void onFailure(String errMsg) {
         if (loginView != null) {
-            loginView.setPasswordError();
-            loginView.hideProgress();
-        }
-    }
-
-    @Override public void onSuccess() {
-        if (loginView != null) {
-            loginView.navigateToHome();
+            loginView.onError(errMsg);
         }
     }
 }
