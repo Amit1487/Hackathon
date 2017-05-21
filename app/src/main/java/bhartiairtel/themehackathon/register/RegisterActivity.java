@@ -183,10 +183,10 @@ public class RegisterActivity extends Activity implements RegisterView, View.OnC
     }
 
     @Override
-    public void onError() {
+    public void onError(String error) {
         new AlertDialog(this, AlertDialog.ERROR_TYPE)
                 .setTitleText("Oops...")
-                .setContentText("Something went wrong!")
+                .setContentText(error)
                 .show();
     }
 }

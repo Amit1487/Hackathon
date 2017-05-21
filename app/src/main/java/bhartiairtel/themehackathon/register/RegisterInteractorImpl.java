@@ -34,7 +34,7 @@ public class RegisterInteractorImpl implements RegisterInteractor {
                 if(msgBean.getStatuscode() == 200){
                     listener.onSuccess();
                 }else{
-
+                    listener.onFailure(msgBean.getMessage());
                 }
 
             }
@@ -43,7 +43,7 @@ public class RegisterInteractorImpl implements RegisterInteractor {
             public void onFailure(Call<CommonResponse> call, Throwable t) {
                 call.cancel();
 
-                listener.onFailure();
+                listener.onFailure(t.getMessage());
             }
         });
     }

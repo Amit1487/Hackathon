@@ -65,9 +65,9 @@ public class RegisterPresenterImpl implements RegisterPresenter, RegisterInterac
     }
 
     @Override
-    public void onFailure() {
+    public void onFailure(String error) {
         if (registerView != null) {
-            registerView.onError();
+            registerView.onError(error);
         }
     }
 

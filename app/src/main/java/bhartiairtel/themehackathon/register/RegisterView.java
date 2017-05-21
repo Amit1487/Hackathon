@@ -16,5 +16,5 @@ public interface RegisterView {
 
     void onSuccess();
 
-    void onError();
+    void onError(String error);
 }

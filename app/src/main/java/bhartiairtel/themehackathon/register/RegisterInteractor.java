@@ -7,7 +7,7 @@ public interface RegisterInteractor {
 
         void onSuccess();
 
-        void onFailure();
+        void onFailure(String error);
     }
 
     void registerUser(String username,String mobileNun,String emailId,String userType, String password, String cnfPassword, OnRegisterFinishedListener listener);

@@ -14,7 +14,7 @@ public class MessageBean {
     public void setStatuscode(int statuscode) {
         this.statuscode = statuscode;
     }
-    public Object getMessage() {
+    public String getMessage() {
         return message;
     }
     public void setMessage(String message) {
