@@ -14,6 +14,7 @@ import android.widget.Button;
 import bhartiairtel.themehackathon.R;
 import bhartiairtel.themehackathon.alertdialog.AlertDialog;
 import bhartiairtel.themehackathon.login.LoginActivity;
+import bhartiairtel.themehackathon.main.NavigationDrawerActivity;
 import bhartiairtel.themehackathon.network.APIClient;
 import bhartiairtel.themehackathon.network.APIInterface;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
@@ -91,6 +92,7 @@ public class AddDependentsFragment extends Fragment {
         mTilRelation = (TextInputLayout) view.findViewById(R.id.til_relation);
         mTilAmnt = (TextInputLayout) view.findViewById(R.id.til_amt);
         submit = (Button) view.findViewById(R.id.btn_submit);
+        final GetUserDetailsResponseBean result = ((NavigationDrawerActivity)this.getActivity()).getResult();
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,7 +108,7 @@ public class AddDependentsFragment extends Fragment {
                                 mTilAmnt.setErrorEnabled(false);
 
                                 AddDependentsRequest addDependentsRequest = new AddDependentsRequest();
-                                addDependentsRequest.setUsername(mTilUName.getEditText().getText().toString());
+                                addDependentsRequest.setUsername(result.getMobilenumber().toString());
                                 addDependentsRequest.setDependentmobile(mTilMob.getEditText().getText().toString());
                                 addDependentsRequest.setRelation(mTilRelation.getEditText().getText().toString());
                                 addDependentsRequest.setAmount(mTilAmnt.getEditText().getText().toString());
