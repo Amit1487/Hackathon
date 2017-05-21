@@ -17,9 +17,9 @@ public class AddMoneyPresenterImpl implements AddMoneyPresenter, AddMoneyInterac
         if (addMoneyView != null) {
             addMoneyView.showProgress();
         }
-if(amount.trim().length()==0){
-    amount ="0";
-}
+        if (amount.trim().length() == 0) {
+            amount = "0";
+        }
         if (Integer.parseInt(amount) >= 10) {
             addMoneyView.setAmountError(false);
 
