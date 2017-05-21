@@ -20,14 +20,22 @@
             android:title="Create Cheque" />
 
         <item
+            android:id="@+id/en_cash"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="En-Cash" />
+
+
+        <item
+            android:id="@+id/pull_from_parent"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="PUll Money" />
+
+
+        <item
             android:id="@+id/dependent_accounts"
             android:icon="@drawable/ic_menu_manage"
             android:title="Logout" />
 
-        <item
-            android:id="@+id/en_cash"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="En-Cash" />
     </group>
 
 

@@ -9,6 +9,8 @@ import bhartiairtel.themehackathon.echeck.ECheckResponse;
 import bhartiairtel.themehackathon.encash.EnCashCheckRequest;
 import bhartiairtel.themehackathon.encash.EnCashChequeRequest;
 import bhartiairtel.themehackathon.encash.EncashResponse;
+import bhartiairtel.themehackathon.encash.GetMoneyFromParentRequestBean;
+import bhartiairtel.themehackathon.encash.PullMoneyResponse;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.pojo.CommonResponse;
 import bhartiairtel.themehackathon.pojo.GetUserDetailsResponseBean;
@@ -55,7 +57,8 @@ public interface APIInterface {
     @POST("/smartbank/adddependent")
     Call<CommonResponse> addDependents(@Body AddDependentsRequest body);
 
-
+    @POST("/smartbank/getmoneyfromparent")
+    Call<PullMoneyResponse> pullMoney(@Body GetMoneyFromParentRequestBean body);
 
 /*
     @GET("/api/some?")

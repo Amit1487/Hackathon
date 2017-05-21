@@ -34,6 +34,7 @@ import bhartiairtel.themehackathon.dependents.AddDependentsFragment;
 import bhartiairtel.themehackathon.echeck.ChequeListFragment;
 import bhartiairtel.themehackathon.echeck.ECheckFragment;
 import bhartiairtel.themehackathon.encash.EnCashCheckFragment;
+import bhartiairtel.themehackathon.encash.PullMoneyFragment;
 import bhartiairtel.themehackathon.login.LoginActivity;
 import bhartiairtel.themehackathon.login.LoginRequest;
 import bhartiairtel.themehackathon.network.APIClient;
@@ -114,6 +115,11 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
     }
 
+
+    public void updateBalance(String amount){
+        if(null != mBalance)
+        mBalance.setText("Curr Bal : " + amount);
+    }
 
     private void requestUsersDetail() {
 
@@ -222,6 +228,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
             } else {
                 Toast.makeText(this, "You are not authorized", Toast.LENGTH_SHORT).show();
             }
+        }else if(id == R.id.pull_from_parent){
+            fragment = PullMoneyFragment.newInstance();
         }
         if (null != fragment)
             getSupportFragmentManager().beginTransaction()

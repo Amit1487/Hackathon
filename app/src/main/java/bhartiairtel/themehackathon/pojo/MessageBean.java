@@ -6,7 +6,7 @@ package bhartiairtel.themehackathon.pojo;
 
 public class MessageBean {
     private int statuscode;
-    private Object message;
+    private String message;
 
     public int getStatuscode() {
         return statuscode;
@@ -17,7 +17,7 @@ public class MessageBean {
     public Object getMessage() {
         return message;
     }
-    public void setMessage(Object message) {
+    public void setMessage(String message) {
         this.message = message;
     }
     @Override
