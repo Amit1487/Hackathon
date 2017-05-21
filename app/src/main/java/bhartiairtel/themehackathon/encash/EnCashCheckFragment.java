@@ -195,17 +195,21 @@ public class EnCashCheckFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                CommonUtilities.createAlert(getContext(), "Enter Check number", new CommonUtilities.OnMpinListener() {
+
+                CommonUtilities.createAlert(getContext(), "Enter mPin", new CommonUtilities.OnMpinListener() {
+                    @Override
+                    public void onEntered(String mPin) {
+                        String userName = ((NavigationDrawerActivity) getActivity()).getResult().getMobilenumber();
+                        requestEncashAmount(userName, mTilCheckNo.getEditText().getText().toString(), mPin);
+                    }
+                });
+
+
+            /*    CommonUtilities.createAlert(getContext(), "Enter Check number", new CommonUtilities.OnMpinListener() {
                     @Override
                     public void onEntered(final String checkNo) {
                         if (checkNo.equalsIgnoreCase(result.getChequenumber())) {
-                            CommonUtilities.createAlert(getContext(), "Enter mPin", new CommonUtilities.OnMpinListener() {
-                                @Override
-                                public void onEntered(String mPin) {
-                                    String userName = ((NavigationDrawerActivity) getActivity()).getResult().getMobilenumber();
-                                    requestEncashAmount(userName, checkNo, mPin);
-                                }
-                            });
+
                         } else {
                             //invalid check number
                             new AlertDialog(EnCashCheckFragment.this.getContext(), AlertDialog.ERROR_TYPE).
@@ -215,7 +219,7 @@ public class EnCashCheckFragment extends Fragment {
                                     .setConfirmClickListener(null).show();
                         }
                     }
-                });
+                });*/
 
 
             }
